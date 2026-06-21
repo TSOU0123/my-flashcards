@@ -11,13 +11,33 @@ st.set_page_config(page_title="📱 國考刷題", layout="centered", initial_si
 # ==========================================
 st.markdown("""
     <style>
+    /* 隱藏預設的頂部選單、底部浮水印、頂部工具列，把整個畫面讓給內容本身 */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden; height: 0;}
+    [data-testid="stToolbar"] {visibility: hidden; height: 0;}
+
+    /* 鎖死手機版面，禁止雙擊與雙指放大整個網頁 */
+    html, body {
+        overscroll-behavior-x: none;
+        overscroll-behavior-y: auto;
+        touch-action: pan-y; /* 鎖死縮放的關鍵 */
+        -webkit-text-size-adjust: 100%;
+    }
+
+    /* 讓整個網頁的最下方多留一點空白，避免題目內容被底部按鈕蓋住 */
+    .block-container {
+        padding-top: 1.2rem;
+        padding-bottom: 112px;
+        max-width: 600px;
+    }
+
     /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
     .st-key-question_card {
         border-radius: 16px !important;
         padding: 18px !important;
         box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
         animation: fadeIn 0.25s ease-out forwards;
-        /* 【修復圖片放大】：移除會困住全螢幕元件的 transform 屬性 */
     }
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
@@ -63,7 +83,7 @@ st.markdown("""
         border-radius: 12px !important;
     }
 
-    /* 【新增】：懸浮側邊換題按鈕 (透明、不擋視線) */
+    /* 懸浮側邊換題按鈕 (透明、不擋視線) */
     .st-key-btn_prev, .st-key-btn_next {
         position: fixed !important;
         top: 50% !important;
@@ -239,6 +259,18 @@ if idx < total - 1:
 components.html("""
 <script>
 const doc = window.parent.document;
+
+// 【新增】：強制修改手機瀏覽器的 Viewport，鎖死網頁禁止整頁縮放
+let metaViewport = doc.querySelector('meta[name="viewport"]');
+if (metaViewport) {
+    metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+} else {
+    let meta = doc.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    doc.head.appendChild(meta);
+}
+
 let touchstartX = 0;
 let touchstartY = 0;
 let touchendX = 0;
