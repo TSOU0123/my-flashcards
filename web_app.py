@@ -32,17 +32,17 @@ st.markdown("""
         max-width: 600px;
     }
 
-    /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
+
     .st-key-question_card {
+        background-color: var(--background-color);
+        border: 1px solid var(--secondary-background-color);
         border-radius: 16px !important;
         padding: 18px !important;
-        box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
+        box-shadow: 0px 2px 12px rgba(0,0,0,0.15);
         animation: fadeIn 0.25s ease-out forwards;
+        contain: none !important;
     }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: none; } 
-    }
+
     .st-key-question_card img {
         border-radius: 12px;
         cursor: zoom-in; /* 提示使用者可以點擊放大 */
@@ -64,17 +64,16 @@ st.markdown("""
         min-height: 44px;
     }
 
-    /* 底部固定按鈕區 */
     .st-key-bottom_nav {
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #FFFFFF;
+        background-color: var(--background-color);
         padding: 10px 14px calc(14px + env(safe-area-inset-bottom)) 14px;
         z-index: 999;
-        border-top: 1px solid #E3E6F0;
-        box-shadow: 0px -4px 12px rgba(0,0,0,0.05);
+        border-top: 1px solid var(--secondary-background-color);
+        box-shadow: 0px -4px 12px rgba(0,0,0,0.15);
     }
     .st-key-bottom_nav button {
         height: 52px !important;
@@ -102,10 +101,10 @@ st.markdown("""
         height: 100% !important;
         padding: 0 !important;
         border-radius: 6px !important;
-        background: rgba(0,0,0,0.15) !important;
+        background: var(--secondary-background-color) !important;
         border: none !important;
         font-size: 18px !important;
-        color: #000 !important;
+        color: var(--text-color) !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -196,7 +195,8 @@ with st.expander("⚙️ 顯示設定與跳題"):
         jump_target = st.number_input("題號", min_value=1, max_value=total,
                                        value=idx + 1, label_visibility="collapsed")
     with jc2:
-        if st.button("前往", use_container_width=True):
+        # 修正警告：改用 width='stretch'
+        if st.button("前往", width='stretch'):
             st.session_state.q_idx = int(jump_target) - 1
             st.session_state.show_ans = False
             st.rerun()
@@ -204,14 +204,14 @@ with st.expander("⚙️ 顯示設定與跳題"):
 # ==========================================
 # 題目卡片區
 # ==========================================
-with st.container(border=True, key="question_card"):
+# 【關鍵修復】：拿掉 border=True，因為它會強制觸發 overflow: hidden 綁死圖片！
+with st.container(key="question_card"):
     st.markdown(f"#### Q{q['id']}")
     st.write(q['text'])
 
     ans_val = q.get('answer', 'N/A')
     is_mc = bool(q.get("options")) and len(ans_val) < 5
 
-    # 選項顯示區 (按下解答後，正確選項原地變綠並加上 ✅)
     for k, v in q.get("options", {}).items():
         if not v:
             continue
@@ -220,19 +220,16 @@ with st.container(border=True, key="question_card"):
         else:
             st.markdown(f"**({k})** {v}")
 
-    # 若是長篇簡答題(非選擇題)，則另外在下方顯示完整答案
     if st.session_state.show_ans and not is_mc:
         st.success(f"**標準答案：**\n\n{ans_val}")
 
-    # 顯示圖片 (如果有)
-    # 顯示圖片 (如果有)
     if "image" in q and q["image"]:
-        # 徹底去除 Windows 的反斜線與開頭斜線，確保雲端讀取正確
         safe_img_path = q["image"].replace("\\", "/").lstrip("/")
         img_path = os.path.join("local_data", safe_img_path)
         
         if os.path.exists(img_path):
-            st.image(img_path, use_container_width=True)
+            # 修正警告：改用 width='stretch'
+            st.image(img_path, width='stretch')
         else:
             st.error(f"⚠️ 找不到圖片檔案：{img_path}")
 
@@ -253,68 +250,73 @@ if idx < total - 1:
         st.session_state.show_ans = False
         st.rerun()
 
+
 # ==========================================
 # 注入滑動監聽 JS (左右滑動換題)
 # ==========================================
 components.html("""
 <script>
-const doc = window.parent.document;
+(function() {
+    const doc = window.parent.document;
 
-// 【新增】：強制修改手機瀏覽器的 Viewport，鎖死網頁禁止整頁縮放
-let metaViewport = doc.querySelector('meta[name="viewport"]');
-if (metaViewport) {
-    metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
-} else {
-    let meta = doc.createElement('meta');
-    meta.name = 'viewport';
-    meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-    doc.head.appendChild(meta);
-}
-
-let touchstartX = 0;
-let touchstartY = 0;
-let touchendX = 0;
-let touchendY = 0;
-
-doc.addEventListener('touchstart', e => {
-    touchstartX = e.changedTouches[0].screenX;
-    touchstartY = e.changedTouches[0].screenY;
-}, {passive: true});
-
-doc.addEventListener('touchend', e => {
-    touchendX = e.changedTouches[0].screenX;
-    touchendY = e.changedTouches[0].screenY;
-    handleSwipe();
-}, {passive: true});
-
-function handleSwipe() {
-    let diffX = touchstartX - touchendX;
-    let diffY = Math.abs(touchstartY - touchendY);
-
-    // 防誤觸：垂直移動超過 40px，視為使用者想上下捲動，不觸發換題
-    if (diffY > Math.abs(diffX) || diffY > 40) return;
-
-    let card = doc.querySelector('.st-key-question_card');
-
-    // 向左滑動 (下一題)
-    if (diffX > 50) {
-        // 直接精準抓取我們剛新增的右側實體按鈕
-        let nextBtn = doc.querySelector('.st-key-btn_next button');
-        if (nextBtn) {
-            if(card) { card.style.opacity = '0'; }
-            setTimeout(() => nextBtn.click(), 50);
-        }
+    // 【1. 鎖死手機縮放】
+    let metaViewport = doc.querySelector('meta[name="viewport"]');
+    if (metaViewport) {
+        metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    } else {
+        let meta = doc.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+        doc.head.appendChild(meta);
     }
-    // 向右滑動 (上一題)
-    if (diffX < -50) {
-        // 直接精準抓取我們剛新增的左側實體按鈕
-        let prevBtn = doc.querySelector('.st-key-btn_prev button');
-        if (prevBtn) {
-            if(card) { card.style.opacity = '0'; }
-            setTimeout(() => prevBtn.click(), 50);
+
+    // 【2. 防重複綁定】
+    if (window.parent.mySwipeAttached) return;
+    window.parent.mySwipeAttached = true;
+
+    let tsX = 0, tsY = 0;
+
+    doc.addEventListener('touchstart', e => {
+        tsX = e.changedTouches[0].screenX;
+        tsY = e.changedTouches[0].screenY;
+    }, {passive: true});
+
+    doc.addEventListener('touchend', e => {
+        let teX = e.changedTouches[0].screenX;
+        let teY = e.changedTouches[0].screenY;
+        let dX = tsX - teX;
+        let dY = Math.abs(tsY - teY);
+
+        if (dY > Math.abs(dX) || dY > 60) return;
+
+        let card = doc.querySelector('.st-key-question_card');
+        let btns = Array.from(doc.querySelectorAll('button'));
+        let nextBtn = btns.find(b => b.innerText.includes('❯'));
+        let prevBtn = btns.find(b => b.innerText.includes('❮'));
+
+        // 【防白畫面機制】：加入過渡動畫，並在 400 毫秒後強制清除 inline style，避免新題目維持隱形！
+        function triggerSwipe(btn) {
+            if(card) { 
+                card.style.transition = 'opacity 0.2s, transform 0.2s';
+                card.style.opacity = '0'; 
+                card.style.transform = 'scale(0.95)';
+                
+                setTimeout(() => { 
+                    card.style.opacity = ''; 
+                    card.style.transform = ''; 
+                    card.style.transition = '';
+                }, 400); 
+            }
+            setTimeout(() => btn.click(), 50);
         }
-    }
-}
+
+        if (dX > 40 && nextBtn) { // 向左滑 (下一題)
+            triggerSwipe(nextBtn);
+        } else if (dX < -40 && prevBtn) { // 向右滑 (上一題)
+            triggerSwipe(prevBtn);
+        }
+    }, {passive: true});
+})();
 </script>
 """, height=0, width=0)
 
@@ -323,6 +325,6 @@ function handleSwipe() {
 # ==========================================
 with st.container(key="bottom_nav"):
     ans_label = "🙈 收起解答" if st.session_state.show_ans else "💡 看解答"
-    if st.button(ans_label, use_container_width=True, type="primary"):
+    if st.button(ans_label, width='stretch', type="primary"):
         st.session_state.show_ans = not st.session_state.show_ans
         st.rerun()
