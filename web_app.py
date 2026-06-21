@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 import json
 import os
 
@@ -33,16 +32,16 @@ st.markdown("""
     }
 
     /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
+    /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
+    /* 題目卡片：我們自己畫圓角與邊框，不依賴 Streamlit 預設容器以免被強制裁剪 */
     .st-key-question_card {
+        background-color: #FFFFFF;
+        border: 1px solid #E3E6F0;
         border-radius: 16px !important;
         padding: 18px !important;
         box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
-        animation: fadeIn 0.25s ease-out forwards;
     }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: none; } 
-    }
+
     .st-key-question_card img {
         border-radius: 12px;
         cursor: zoom-in; /* 提示使用者可以點擊放大 */
@@ -196,7 +195,8 @@ with st.expander("⚙️ 顯示設定與跳題"):
         jump_target = st.number_input("題號", min_value=1, max_value=total,
                                        value=idx + 1, label_visibility="collapsed")
     with jc2:
-        if st.button("前往", use_container_width=True):
+        # 修正警告：改用 width='stretch'
+        if st.button("前往", width='stretch'):
             st.session_state.q_idx = int(jump_target) - 1
             st.session_state.show_ans = False
             st.rerun()
@@ -204,14 +204,14 @@ with st.expander("⚙️ 顯示設定與跳題"):
 # ==========================================
 # 題目卡片區
 # ==========================================
-with st.container(border=True, key="question_card"):
+# 【關鍵修復】：拿掉 border=True，因為它會強制觸發 overflow: hidden 綁死圖片！
+with st.container(key="question_card"):
     st.markdown(f"#### Q{q['id']}")
     st.write(q['text'])
 
     ans_val = q.get('answer', 'N/A')
     is_mc = bool(q.get("options")) and len(ans_val) < 5
 
-    # 選項顯示區 (按下解答後，正確選項原地變綠並加上 ✅)
     for k, v in q.get("options", {}).items():
         if not v:
             continue
@@ -220,19 +220,16 @@ with st.container(border=True, key="question_card"):
         else:
             st.markdown(f"**({k})** {v}")
 
-    # 若是長篇簡答題(非選擇題)，則另外在下方顯示完整答案
     if st.session_state.show_ans and not is_mc:
         st.success(f"**標準答案：**\n\n{ans_val}")
 
-    # 顯示圖片 (如果有)
-    # 顯示圖片 (如果有)
     if "image" in q and q["image"]:
-        # 徹底去除 Windows 的反斜線與開頭斜線，確保雲端讀取正確
         safe_img_path = q["image"].replace("\\", "/").lstrip("/")
         img_path = os.path.join("local_data", safe_img_path)
         
         if os.path.exists(img_path):
-            st.image(img_path, use_container_width=True)
+            # 修正警告：改用 width='stretch'
+            st.image(img_path, width='stretch')
         else:
             st.error(f"⚠️ 找不到圖片檔案：{img_path}")
 
@@ -256,11 +253,15 @@ if idx < total - 1:
 # ==========================================
 # 注入滑動監聽 JS (左右滑動換題)
 # ==========================================
-components.html("""
+# ==========================================
+# 注入滑動監聽 JS (左右滑動換題)
+# ==========================================
+# 修正警告：改用最新原生的 st.html，直接把腳本注入網頁，不再被 iframe 隔離！
+st.html("""
 <script>
-const doc = window.parent.document;
+// 現在我們直接在母網頁內，不再需要 window.parent.document
+const doc = document;
 
-// 【新增】：強制修改手機瀏覽器的 Viewport，鎖死網頁禁止整頁縮放
 let metaViewport = doc.querySelector('meta[name="viewport"]');
 if (metaViewport) {
     metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
@@ -276,38 +277,37 @@ let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
-doc.addEventListener('touchstart', e => {
-    touchstartX = e.changedTouches[0].screenX;
-    touchstartY = e.changedTouches[0].screenY;
-}, {passive: true});
+// 防止畫面重整時重複綁定事件
+if (!window.swipeListenerAdded) {
+    doc.addEventListener('touchstart', e => {
+        touchstartX = e.changedTouches[0].screenX;
+        touchstartY = e.changedTouches[0].screenY;
+    }, {passive: true});
 
-doc.addEventListener('touchend', e => {
-    touchendX = e.changedTouches[0].screenX;
-    touchendY = e.changedTouches[0].screenY;
-    handleSwipe();
-}, {passive: true});
+    doc.addEventListener('touchend', e => {
+        touchendX = e.changedTouches[0].screenX;
+        touchendY = e.changedTouches[0].screenY;
+        handleSwipe();
+    }, {passive: true});
+    window.swipeListenerAdded = true;
+}
 
 function handleSwipe() {
     let diffX = touchstartX - touchendX;
     let diffY = Math.abs(touchstartY - touchendY);
 
-    // 防誤觸：垂直移動超過 40px，視為使用者想上下捲動，不觸發換題
     if (diffY > Math.abs(diffX) || diffY > 40) return;
 
     let card = doc.querySelector('.st-key-question_card');
 
-    // 向左滑動 (下一題)
     if (diffX > 50) {
-        // 直接精準抓取我們剛新增的右側實體按鈕
         let nextBtn = doc.querySelector('.st-key-btn_next button');
         if (nextBtn) {
             if(card) { card.style.opacity = '0'; }
             setTimeout(() => nextBtn.click(), 50);
         }
     }
-    // 向右滑動 (上一題)
     if (diffX < -50) {
-        // 直接精準抓取我們剛新增的左側實體按鈕
         let prevBtn = doc.querySelector('.st-key-btn_prev button');
         if (prevBtn) {
             if(card) { card.style.opacity = '0'; }
@@ -316,13 +316,14 @@ function handleSwipe() {
     }
 }
 </script>
-""", height=0, width=0)
+""")
 
 # ==========================================
 # 底部固定按鈕區 (只保留大顆解答按鈕)
 # ==========================================
 with st.container(key="bottom_nav"):
     ans_label = "🙈 收起解答" if st.session_state.show_ans else "💡 看解答"
-    if st.button(ans_label, use_container_width=True, type="primary"):
+    # 修正警告：改用 width='stretch'
+    if st.button(ans_label, width='stretch', type="primary"):
         st.session_state.show_ans = not st.session_state.show_ans
         st.rerun()
