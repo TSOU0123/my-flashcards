@@ -123,9 +123,7 @@ st.markdown(f"""
     </style>
 """, unsafe_allow_html=True)
 
-# 讀取電腦端處理好的 JSON 題庫
-# 讀取電腦端處理好的 JSON 題庫 (改為掃描所有子資料夾)
-@st.cache_data
+
 def load_data():
     combined_data = {"decks": {}}
     base_dir = "local_data"
