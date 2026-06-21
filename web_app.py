@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import json
 import os
 
@@ -68,11 +69,30 @@ st.markdown("""
         box-shadow: 0px -4px 12px rgba(0,0,0,0.05);
     }
     .st-key-bottom_nav button {
-        height: 52px !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        border-radius: 12px !important;
-    }
+            height: 52px !important;
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            border-radius: 12px !important;
+        }
+
+        /* 隱藏換題按鈕(交給手勢滑動觸發) */
+        .st-key-hidden_buttons {
+            display: none !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# 確保字體大小狀態存在
+if "font_size" not in st.session_state:
+    st.session_state.font_size = 18
+
+# 注入動態字體 CSS
+st.markdown(f"""
+    <style>
+    .st-key-question_card * {{
+        font-size: {st.session_state.font_size}px !important;
+        line-height: 1.6 !important;
+    }}
     </style>
 """, unsafe_allow_html=True)
 
@@ -106,14 +126,18 @@ q = questions[idx]
 # 進度條
 st.progress((idx + 1) / total, text=f"進度：第 {idx + 1} / {total} 題")
 
-# 跳題功能(收合在摺疊區塊裡，不佔用主畫面空間，需要才展開)
-with st.expander("🔢 跳至指定題號"):
+
+with st.expander("⚙️ 顯示設定與跳題"):
+    # 字體調整拉桿
+    st.session_state.font_size = st.slider("調整字體大小", min_value=14, max_value=36, value=st.session_state.font_size, step=1)
+    
+    st.write("跳至指定題號：")
     jc1, jc2 = st.columns([3, 1])
     with jc1:
         jump_target = st.number_input("題號", min_value=1, max_value=total,
                                        value=idx + 1, label_visibility="collapsed")
     with jc2:
-        if st.button("前往", width='stretch'):
+        if st.button("前往", use_container_width=True):
             st.session_state.q_idx = int(jump_target) - 1
             st.session_state.show_ans = False
             st.rerun()
@@ -143,33 +167,73 @@ with st.container(border=True, key="question_card"):
 
     # 顯示圖片 (如果有)
     if "image" in q:
-        img_path = os.path.join("local_data", q["image"])
+        # 【修復圖片載入】：處理 Windows (\) 與 Linux (/) 的斜線路徑差異
+        safe_img_path = q["image"].replace("\\", "/")
+        img_path = os.path.join("local_data", safe_img_path)
+        
         if os.path.exists(img_path):
-            st.image(img_path, width='stretch')
+            st.image(img_path, use_container_width=True)
+        else:
+            st.error(f"⚠️ 找不到圖片檔案：{img_path}")
 
 st.write("")  # 跟底部固定按鈕保留一點呼吸空間，避免緊貼
 
 # ==========================================
-# 底部固定按鈕區 (用 container(key="bottom_nav") 精準鎖定固定，
-# 不會誤把頁面上其他的 st.columns() 排版也一起鎖住)
+# 隱藏的換題按鈕 (給 JS 滑動觸發用)
 # ==========================================
-with st.container(key="bottom_nav"):
-    col1, col2, col3 = st.columns(3, gap="small")
-
-    with col1:
-        if st.button("⬅️ 上一題", width='stretch', disabled=(idx == 0)):
+with st.container(key="hidden_buttons"):
+    if st.button("PrevQuestionHidden"):
+        if idx > 0:
             st.session_state.q_idx -= 1
             st.session_state.show_ans = False
             st.rerun()
-
-    with col2:
-        ans_label = "🙈 收起解答" if st.session_state.show_ans else "💡 看解答"
-        if st.button(ans_label, width='stretch', type="primary"):
-            st.session_state.show_ans = not st.session_state.show_ans
-            st.rerun()
-
-    with col3:
-        if st.button("下一題 ➡️", width='stretch', disabled=(idx == total - 1)):
+    if st.button("NextQuestionHidden"):
+        if idx < total - 1:
             st.session_state.q_idx += 1
             st.session_state.show_ans = False
             st.rerun()
+
+# ==========================================
+# 注入滑動監聽 JS (左右滑動換題)
+# ==========================================
+components.html("""
+<script>
+const doc = window.parent.document;
+let touchstartX = 0;
+let touchendX = 0;
+
+doc.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX;
+}, {passive: true});
+
+doc.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, {passive: true});
+
+function handleSwipe() {
+    let diff = touchstartX - touchendX;
+    // 向左滑動 (下一題)
+    if (diff > 50) {
+        let btns = Array.from(doc.querySelectorAll('button'));
+        let nextBtn = btns.find(b => b.innerText === 'NextQuestionHidden');
+        if (nextBtn) nextBtn.click();
+    }
+    // 向右滑動 (上一題)
+    if (diff < -50) {
+        let btns = Array.from(doc.querySelectorAll('button'));
+        let prevBtn = btns.find(b => b.innerText === 'PrevQuestionHidden');
+        if (prevBtn) prevBtn.click();
+    }
+}
+</script>
+""", height=0, width=0)
+
+# ==========================================
+# 底部固定按鈕區 (只保留大顆解答按鈕)
+# ==========================================
+with st.container(key="bottom_nav"):
+    ans_label = "🙈 收起解答" if st.session_state.show_ans else "💡 看解答"
+    if st.button(ans_label, use_container_width=True, type="primary"):
+        st.session_state.show_ans = not st.session_state.show_ans
+        st.rerun()
