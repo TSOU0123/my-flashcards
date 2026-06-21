@@ -201,7 +201,7 @@ with st.container(border=True, key="question_card"):
         if not v:
             continue
         if st.session_state.show_ans and is_mc and k in ans_val:
-            st.markdown(f"**({k})** :green[**✅ {v}**]　👈 正確解答")
+            st.markdown(f"**({k})** :green[**✅ {v}**]")
         else:
             st.markdown(f"**({k})** {v}")
 
