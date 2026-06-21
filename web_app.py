@@ -18,8 +18,10 @@ st.markdown("""
     [data-testid="stToolbar"] {visibility: hidden; height: 0;}
 
     /* 關閉下拉刷新的彈跳效果，更有原生 App 的觸感 */
+    /* 關閉左右滑動觸發瀏覽器上一頁的干擾，但保留垂直下拉刷新的功能 */
     html, body {
-        overscroll-behavior-y: contain;
+        overscroll-behavior-x: none;
+        overscroll-behavior-y: auto;
     }
 
     /* 讓整個網頁的最下方多留一點空白，避免題目內容被底部按鈕蓋住 */
@@ -29,11 +31,17 @@ st.markdown("""
         max-width: 600px;
     }
 
-    /* 題目卡片：圓角、陰影，內容跟周圍留白更舒服 */
+    /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
     .st-key-question_card {
         border-radius: 16px !important;
         padding: 18px !important;
         box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
+        animation: fadeIn 0.25s ease-out forwards;
+        transition: transform 0.15s ease-in, opacity 0.15s ease-in;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
     .st-key-question_card img {
         border-radius: 12px;
@@ -110,14 +118,32 @@ if not decks:
     st.stop()
 
 # 頂部題庫選擇
-selected_deck = st.selectbox("📂 選擇題庫", decks)
+# --- [新增] 讀取網址列記憶 (讓瀏覽器記住進度) ---
+url_deck = st.query_params.get("deck", None)
+url_q = st.query_params.get("q", None)
+
+# 頂部題庫選擇
+default_deck_idx = decks.index(url_deck) if url_deck in decks else 0
+selected_deck = st.selectbox("📂 選擇題庫", decks, index=default_deck_idx)
 questions = data["decks"][selected_deck]["questions"]
 
 # 題號與狀態管理
 if "q_idx" not in st.session_state or st.session_state.get("last_deck") != selected_deck:
-    st.session_state.q_idx = 0
+    init_idx = 0
+    # 如果網址列有題號紀錄，且選中的題庫一致，就恢復該題號
+    if url_q and url_q.isdigit() and selected_deck == url_deck:
+        init_idx = int(url_q)
+        if init_idx >= len(questions): init_idx = 0
+        
+    st.session_state.q_idx = init_idx
     st.session_state.last_deck = selected_deck
     st.session_state.show_ans = False
+
+idx = st.session_state.q_idx
+
+# 每次渲染都將目前進度寫回網址列
+st.query_params["deck"] = selected_deck
+st.query_params["q"] = str(idx)
 
 idx = st.session_state.q_idx
 total = len(questions)
@@ -166,9 +192,10 @@ with st.container(border=True, key="question_card"):
         st.success(f"**標準答案：**\n\n{ans_val}")
 
     # 顯示圖片 (如果有)
-    if "image" in q:
-        # 【修復圖片載入】：處理 Windows (\) 與 Linux (/) 的斜線路徑差異
-        safe_img_path = q["image"].replace("\\", "/")
+    # 顯示圖片 (如果有)
+    if "image" in q and q["image"]:
+        # 徹底去除 Windows 的反斜線與開頭斜線，確保雲端讀取正確
+        safe_img_path = q["image"].replace("\\", "/").lstrip("/")
         img_path = os.path.join("local_data", safe_img_path)
         
         if os.path.exists(img_path):
@@ -200,30 +227,48 @@ components.html("""
 <script>
 const doc = window.parent.document;
 let touchstartX = 0;
+let touchstartY = 0;
 let touchendX = 0;
+let touchendY = 0;
 
 doc.addEventListener('touchstart', e => {
     touchstartX = e.changedTouches[0].screenX;
+    touchstartY = e.changedTouches[0].screenY;
 }, {passive: true});
 
 doc.addEventListener('touchend', e => {
     touchendX = e.changedTouches[0].screenX;
+    touchendY = e.changedTouches[0].screenY;
     handleSwipe();
 }, {passive: true});
 
 function handleSwipe() {
-    let diff = touchstartX - touchendX;
+    let diffX = touchstartX - touchendX;
+    let diffY = Math.abs(touchstartY - touchendY);
+
+    // 【防誤觸】：如果垂直滑動距離大於水平滑動，或垂直移動超過 40px，視為使用者想上下捲動或下拉重整，不觸發換題
+    if (diffY > Math.abs(diffX) || diffY > 40) return;
+
+    let card = doc.querySelector('.st-key-question_card');
+    let btns = Array.from(doc.querySelectorAll('button'));
+
     // 向左滑動 (下一題)
-    if (diff > 50) {
-        let btns = Array.from(doc.querySelectorAll('button'));
+    if (diffX > 50) {
         let nextBtn = btns.find(b => b.innerText === 'NextQuestionHidden');
-        if (nextBtn) nextBtn.click();
+        if (nextBtn && !nextBtn.disabled) {
+            // 加入滑出特效
+            if(card) { card.style.transform = 'translateX(-30vw)'; card.style.opacity = '0'; }
+            setTimeout(() => nextBtn.click(), 120);
+        }
     }
     // 向右滑動 (上一題)
-    if (diff < -50) {
-        let btns = Array.from(doc.querySelectorAll('button'));
+    if (diffX < -50) {
         let prevBtn = btns.find(b => b.innerText === 'PrevQuestionHidden');
-        if (prevBtn) prevBtn.click();
+        if (prevBtn && !prevBtn.disabled) {
+            // 加入滑出特效
+            if(card) { card.style.transform = 'translateX(30vw)'; card.style.opacity = '0'; }
+            setTimeout(() => prevBtn.click(), 120);
+        }
     }
 }
 </script>
