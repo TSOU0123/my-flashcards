@@ -31,15 +31,15 @@ st.markdown("""
         max-width: 600px;
     }
 
-    /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
-    /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
-    /* 題目卡片：我們自己畫圓角與邊框，不依賴 Streamlit 預設容器以免被強制裁剪 */
+
     .st-key-question_card {
-        background-color: #FFFFFF;
-        border: 1px solid #E3E6F0;
+        background-color: var(--background-color);
+        border: 1px solid var(--secondary-background-color);
         border-radius: 16px !important;
         padding: 18px !important;
-        box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
+        box-shadow: 0px 2px 12px rgba(0,0,0,0.15);
+        animation: fadeIn 0.25s ease-out forwards;
+        contain: none !important;
     }
 
     .st-key-question_card img {
@@ -63,17 +63,16 @@ st.markdown("""
         min-height: 44px;
     }
 
-    /* 底部固定按鈕區 */
     .st-key-bottom_nav {
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #FFFFFF;
+        background-color: var(--background-color);
         padding: 10px 14px calc(14px + env(safe-area-inset-bottom)) 14px;
         z-index: 999;
-        border-top: 1px solid #E3E6F0;
-        box-shadow: 0px -4px 12px rgba(0,0,0,0.05);
+        border-top: 1px solid var(--secondary-background-color);
+        box-shadow: 0px -4px 12px rgba(0,0,0,0.15);
     }
     .st-key-bottom_nav button {
         height: 52px !important;
@@ -101,10 +100,10 @@ st.markdown("""
         height: 100% !important;
         padding: 0 !important;
         border-radius: 6px !important;
-        background: rgba(0,0,0,0.15) !important;
+        background: var(--secondary-background-color) !important;
         border: none !important;
         font-size: 18px !important;
-        color: #000 !important;
+        color: var(--text-color) !important;
     }
     </style>
 """, unsafe_allow_html=True)
