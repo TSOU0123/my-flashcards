@@ -252,32 +252,30 @@ if idx < total - 1:
 # ==========================================
 # 注入滑動監聽 JS (左右滑動換題)
 # ==========================================
-# ==========================================
-# 注入滑動監聽 JS (左右滑動換題)
-# ==========================================
-# 修正警告：改用最新原生的 st.html，直接把腳本注入網頁，不再被 iframe 隔離！
 st.html("""
 <script>
-// 現在我們直接在母網頁內，不再需要 window.parent.document
-const doc = document;
+// 【修復】：使用 IIFE (立即執行函式) 包裝，避免 Streamlit 重新渲染時發生變數重複宣告的崩潰錯誤
+(function() {
+    const doc = document;
 
-let metaViewport = doc.querySelector('meta[name="viewport"]');
-if (metaViewport) {
-    metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
-} else {
-    let meta = doc.createElement('meta');
-    meta.name = 'viewport';
-    meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-    doc.head.appendChild(meta);
-}
+    let metaViewport = doc.querySelector('meta[name="viewport"]');
+    if (metaViewport) {
+        metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    } else {
+        let meta = doc.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+        doc.head.appendChild(meta);
+    }
 
-let touchstartX = 0;
-let touchstartY = 0;
-let touchendX = 0;
-let touchendY = 0;
+    // 如果已經綁定過滑動事件，就直接跳出，避免重複綁定
+    if (window.swipeListenerAdded) return;
 
-// 防止畫面重整時重複綁定事件
-if (!window.swipeListenerAdded) {
+    let touchstartX = 0;
+    let touchstartY = 0;
+    let touchendX = 0;
+    let touchendY = 0;
+
     doc.addEventListener('touchstart', e => {
         touchstartX = e.changedTouches[0].screenX;
         touchstartY = e.changedTouches[0].screenY;
@@ -288,32 +286,33 @@ if (!window.swipeListenerAdded) {
         touchendY = e.changedTouches[0].screenY;
         handleSwipe();
     }, {passive: true});
+
+    function handleSwipe() {
+        let diffX = touchstartX - touchendX;
+        let diffY = Math.abs(touchstartY - touchendY);
+
+        if (diffY > Math.abs(diffX) || diffY > 40) return;
+
+        let card = doc.querySelector('.st-key-question_card');
+
+        if (diffX > 50) {
+            let nextBtn = doc.querySelector('.st-key-btn_next button');
+            if (nextBtn) {
+                if(card) { card.style.opacity = '0'; }
+                setTimeout(() => nextBtn.click(), 50);
+            }
+        }
+        if (diffX < -50) {
+            let prevBtn = doc.querySelector('.st-key-btn_prev button');
+            if (prevBtn) {
+                if(card) { card.style.opacity = '0'; }
+                setTimeout(() => prevBtn.click(), 50);
+            }
+        }
+    }
+
     window.swipeListenerAdded = true;
-}
-
-function handleSwipe() {
-    let diffX = touchstartX - touchendX;
-    let diffY = Math.abs(touchstartY - touchendY);
-
-    if (diffY > Math.abs(diffX) || diffY > 40) return;
-
-    let card = doc.querySelector('.st-key-question_card');
-
-    if (diffX > 50) {
-        let nextBtn = doc.querySelector('.st-key-btn_next button');
-        if (nextBtn) {
-            if(card) { card.style.opacity = '0'; }
-            setTimeout(() => nextBtn.click(), 50);
-        }
-    }
-    if (diffX < -50) {
-        let prevBtn = doc.querySelector('.st-key-btn_prev button');
-        if (prevBtn) {
-            if(card) { card.style.opacity = '0'; }
-            setTimeout(() => prevBtn.click(), 50);
-        }
-    }
-}
+})();
 </script>
 """)
 
@@ -322,7 +321,6 @@ function handleSwipe() {
 # ==========================================
 with st.container(key="bottom_nav"):
     ans_label = "🙈 收起解答" if st.session_state.show_ans else "💡 看解答"
-    # 修正警告：改用 width='stretch'
     if st.button(ans_label, width='stretch', type="primary"):
         st.session_state.show_ans = not st.session_state.show_ans
         st.rerun()
