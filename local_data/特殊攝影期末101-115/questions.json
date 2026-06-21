@@ -4,1073 +4,6 @@
   },
   "questions": [
     {
-      "id": "103-1-9",
-      "text": "下列何種穿刺引流術最可以紓緩急性膽囊炎的症狀？",
-      "options": {
-        "A": "PTBD(percutaneous transhepatic biliary drainage)",
-        "B": "ENBD(endoscopic nasal biliary drainage)",
-        "C": "PTGBD (percutaneous transhepatic GB drainage)",
-        "D": "PAOD(peripheral arterial occlusive disease)"
-      },
-      "page": 1,
-      "answer": "C"
-    },
-    {
-      "id": "103-1-10",
-      "text": "常見的替代性右肝動脈(replaced right hepatic artery)正常變異，最常源自於下列那一條血管？",
-      "options": {
-        "A": "主動脈",
-        "B": "腹腔動脈",
-        "C": "上腸系(繫)膜動脈",
-        "D": "下腸系(繫)膜動脈"
-      },
-      "page": 1,
-      "answer": "A"
-    },
-    {
-      "id": "103-1-11",
-      "text": "下列關於泌尿系統檢查之敘述何者正確？",
-      "options": {
-        "A": "IVU的病人應進 行骨盆處束縛以利對比劑滯留於上輸尿管",
-        "B": "VCUG可作為評 估尿失禁或尿道創傷之檢查",
-        "C": "男性逆行性尿道攝影時宜採 RAO 30度",
-        "D": "Retrograde pyelography(RP)不是侵襲性檢查"
-      },
-      "page": 1,
-      "answer": "B"
-    },
-    {
-      "id": "103-1-15",
-      "text": "通常放置inferior vena cava filter時，filter應放置於何處？",
-      "options": {
-        "A": "inferior to the renal vein",
-        "B": "superior to the renal vein",
-        "C": "inferior to right hepatic vein",
-        "D": "superior to right hepatic vein"
-      },
-      "page": 2,
-      "answer": "B"
-    },
-    {
-      "id": "103-1-16",
-      "text": "下列何者為腎臟栓塞術(renal embolization)最常見之適應症？",
-      "options": {
-        "A": "renal cell carcinoma",
-        "B": "renal oncocytoma",
-        "C": "renal injuries",
-        "D": "renal angiomyolipoma"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "103-1-17",
-      "text": "在血管攝影後，對凝血功能正常之病人，應壓迫puncture site，而且病人至少應臥床幾小時？",
-      "options": {
-        "A": "1",
-        "B": "4",
-        "C": "12",
-        "D": "24"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "103-1-18",
-      "text": "膀胱攝影(cystography)患者採仰臥姿勢，為使膀胱底與恥骨聯合分開，攝影時X光管之投射方 向應採：",
-      "options": {
-        "A": "垂直檢查台",
-        "B": "向頭10～15度",
-        "C": "向脚10～15度",
-        "D": "平行檢查台"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "103-1-20",
-      "text": "Pantomography(panorex)的主要目的在於呈現：",
-      "options": {
-        "A": "teeth及mandible",
-        "B": "nasal cavity及maxillary sinuses",
-        "C": "external acoustic canals及mastoids",
-        "D": "orbits及ethmoid sinuses"
-      },
-      "page": 2,
-      "answer": "D"
-    },
-    {
-      "id": "103-1-21",
-      "text": "施行hysterosalpingography(HSG)，病患已置入導管進行注射對比劑時，病人宜採何體位？",
-      "options": {
-        "A": "lithotomy position",
-        "B": "Sims' position",
-        "C": "Trendelenburg position",
-        "D": "prone position"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "103-1-22",
-      "text": "關於膽囊位置與病人體態的關係，下列何者正確？",
-      "options": {
-        "A": "愈瘦者其膽囊位置愈低且接近脊椎",
-        "B": "愈胖者其膽囊位置愈低而遠離脊椎",
-        "C": "愈瘦者其膽囊位置愈高而遠離脊椎",
-        "D": "愈胖者其膽囊位置愈高且接近脊椎"
-      },
-      "page": 2,
-      "answer": "D"
-    },
-    {
-      "id": "103-1-30",
-      "text": "CT angiography如欲呈現血管壁鈣化斑，應以下列何技術為佳？",
-      "options": {
-        "A": "maximum intensity projection(MIP)",
-        "B": "shaded surface display(SSD)",
-        "C": "volume rendering(VR)",
-        "D": "virtual endoscopy"
-      },
-      "page": 4,
-      "answer": "D"
-    },
-    {
-      "id": "103-1-46",
-      "text": "下圖箭號所指係椎間盤突出壓迫神經而產生症狀，請問是壓迫下列那一區段之神經？",
-      "options": {
-        "A": "左側L4-L5",
-        "B": "右側L4-L5",
-        "C": "左側L5-S1",
-        "D": "右側L5-S1"
-      },
-      "page": 7,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q103-1-46_p7_i2.png"
-    },
-    {
-      "id": "103-1-50",
-      "text": "以超音波導引做介入性診療時，下列那一項最危險？",
-      "options": {
-        "A": "肝臟囊腫之經皮穿刺硬化治療(sclerotherapy)",
-        "B": "膿瘍之經皮穿刺引流",
-        "C": "動靜脈畸形之介入性治療",
-        "D": "肝癌射頻(radiofrequency)之治療"
-      },
-      "page": 8,
-      "answer": "D"
-    },
-    {
-      "id": "103-1-57",
-      "text": "下列有關成人腎臟超音波影像的敘述，何者最不正確？",
-      "options": {
-        "A": "腎皮質(cortex)的回音較正常的肝臟低或相近",
-        "B": "腎錐體(pyramid)呈低回音，並呈橢圓型排列",
-        "C": "腎竇部(renal sinus)常呈現低回音",
-        "D": "腎臟長徑 約9～12公分，左腎通常比右腎大"
-      },
-      "page": 9,
-      "answer": "D"
-    },
-    {
-      "id": "103-1-61",
-      "text": "43歲男性病人因左腰痛就診，膀胱之灰階超音波掃描如下圖，箭號所指最可能為何？",
-      "options": {
-        "A": "輸尿管結石",
-        "B": "附近腸氣假影",
-        "C": "膀胱結石",
-        "D": "攝護腺結石"
-      },
-      "page": 10,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q103-1-61_p10_i2.png"
-    },
-    {
-      "id": "103-1-62",
-      "text": "50歲男性橫向膀胱彩色杜卜勒超音波掃描如下圖，箭號所指為何？",
-      "options": {
-        "A": "twinkling artifact",
-        "B": "edge artifact",
-        "C": "flash artifact",
-        "D": "jet phenomenon"
-      },
-      "page": 10,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q103-1-62_p11_i1.png"
-    },
-    {
-      "id": "103-1-79",
-      "text": "頭頸部CT檢查通常要注射含碘對比劑，否則頸部太多圓形構造難以區分，對照左、右圖，箭號1 所指的是：",
-      "options": {
-        "A": "頸靜脈(jugular vein)",
-        "B": "淋巴結(lymph node)",
-        "C": "頸動脈(carotid artery)",
-        "D": "神經(nerve)"
-      },
-      "page": 14,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q103-1-79_p14_i2.png"
-    },
-    {
-      "id": "103-1-80",
-      "text": "承上題，箭號2所指的是：",
-      "options": {
-        "A": "頸動脈",
-        "B": "淋巴結",
-        "C": "肌肉",
-        "D": "神經"
-      },
-      "page": 14,
-      "answer": "B"
-    },
-    {
-      "id": "102-2-6",
-      "text": "下列何者與膽道結石之攝影最無相關？",
-      "options": {
-        "A": "IVU",
-        "B": "cholangiography",
-        "C": "ERCP",
-        "D": "MRCP"
-      },
-      "page": 1,
-      "answer": "A"
-    },
-    {
-      "id": "102-2-12",
-      "text": "攝影時病患平躺，口張開，上排牙齒到乳突垂直檢查台，X光中線對準口部中央作投影。此乃檢 查下列何者？",
-      "options": {
-        "A": "上顎",
-        "B": "下顎",
-        "C": "第一、二頸椎",
-        "D": "顴骨"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "102-2-15",
-      "text": "下列何者為傳統血管介入性診療術？",
-      "options": {
-        "A": "栓塞術(embolization)",
-        "B": "經皮穿腎引流術(percutaneous nephrostomy)",
-        "C": "腸道支架置放術(enteric stenting)",
-        "D": "經皮脊椎成形術(percutaneous vertebroplasty)"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "102-2-16",
-      "text": "病患進行腦部傳統血管攝影後，下列何者是最需要注意的事項？",
-      "options": {
-        "A": "絕對臥床休息4～6小時",
-        "B": "保持穿刺部位彎曲6小時",
-        "C": "24小時內只能進食液體食物",
-        "D": "6小時內進行腦部CT檢查"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "102-2-17",
-      "text": "下列何者為數位透視攝影(digital radiography-fluoroscopy)優於傳統透視攝影(conventional film-screen fluoroscopy)之處？",
-      "options": {
-        "A": "需要使用片匣(cassettes)",
-        "B": "只有一種成像格式(frame format)",
-        "C": "病人之輻射曝露量較低",
-        "D": "不能用連續放映模式(cine-mode)"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "102-2-22",
-      "text": "Synovial joints and related soft tissue structures的對比劑檢查是指：",
-      "options": {
-        "A": "血管攝影(angiography)",
-        "B": "關節攝影(arthrography)",
-        "C": "脊髓攝影(myelography)",
-        "D": "腦池攝影(cisternography)"
-      },
-      "page": 3,
-      "answer": "B"
-    },
-    {
-      "id": "102-2-23",
-      "text": "輸尿管有三處生理性狹窄，下列何者不包括在內？",
-      "options": {
-        "A": "輸尿管和腎盂交接處",
-        "B": "輸尿管和腎動靜脈交接處",
-        "C": "輸尿管和髂骨動靜脈交接處",
-        "D": "輸尿管和膀胱交接處"
-      },
-      "page": 3,
-      "answer": "B"
-    },
-    {
-      "id": "102-2-24",
-      "text": "下列有關介入性血管成形術(angioplasty)的敘述，何者錯誤？",
-      "options": {
-        "A": "應注意預防血管破裂、穿孔、阻塞等可能之併發症",
-        "B": "需注意以氣球擴張血管腔時間的長短",
-        "C": "當血管成形術完成後，應即刻拔出導管，不應注射對比劑追蹤，以減少傷害",
-        "D": "血管成形術可應用於冠狀動脈、腎動脈或下肢動脈"
-      },
-      "page": 3,
-      "answer": "C"
-    },
-    {
-      "id": "102-2-25",
-      "text": "IVU使用下列何種對比劑？",
-      "options": {
-        "A": "鋇劑",
-        "B": "含碘對比劑",
-        "C": "空氣",
-        "D": "二氧化碳"
-      },
-      "page": 3,
-      "answer": "B"
-    },
-    {
-      "id": "102-2-37",
-      "text": "下列何者最不適合使用非離子性含碘對比劑？",
-      "options": {
-        "A": "血清肌酸酐( creatinine)值為 0.9 mg/dL",
-        "B": "年齡小於 5 歲",
-        "C": "多發性骨髓瘤",
-        "D": "年齡大於70歲"
-      },
-      "page": 5,
-      "answer": "C"
-    },
-    {
-      "id": "102-2-39",
-      "text": "如果希望藉由CT angiography來評估血管狹窄程度及血管壁鈣化情形，以做為施行血管擴張術或 置放支架(stent)的參考，則下列何者較不適宜？",
-      "options": {
-        "A": "maximum intensity projection(MIP)",
-        "B": "multiplanar reformation(MPR)",
-        "C": "shaded surface display(SSD)",
-        "D": "volume rendering(VR)"
-      },
-      "page": 5,
-      "answer": "C"
-    },
-    {
-      "id": "102-2-64",
-      "text": "下列關於腎臟移植超音波檢查的敘述，何者錯誤？",
-      "options": {
-        "A": "移植腎通常置於髂骨窩",
-        "B": "移植腎之血管通常連接到髂骨血管(iliac vessels)",
-        "C": "與原始病人之腎臟比較，移植腎之皮質較薄",
-        "D": "移植腎較不易被腸氣阻擋"
-      },
-      "page": 9,
-      "answer": "C"
-    },
-    {
-      "id": "102-2-70",
-      "text": "腎臟超音波檢查時，下列關於腎臟回音性的敘述，何者錯誤？",
-      "options": {
-        "A": "正常腎皮質之回音比胰臟實質回音低",
-        "B": "腎臟實質部分之厚度正常應大於1.3公分",
-        "C": "正常腎髓質錐體(medullary pyramid)之回音較皮質高",
-        "D": "正常腎臟回音，以腎竇(renal sinus)最高"
-      },
-      "page": 9,
-      "answer": "C"
-    },
-    {
-      "id": "102-1-6",
-      "text": "一般進行腦部傳統血管攝影，病患禁食時間最少要有多少小時：",
-      "options": {
-        "A": "0",
-        "B": "1～2",
-        "C": "4～8",
-        "D": "10～14"
-      },
-      "page": 1,
-      "answer": "A"
-    },
-    {
-      "id": "102-1-7",
-      "text": "施行靜脈注射尿路攝影(intravenous urography)，尿路壓迫(ureteric compression)解開的時機，通常緊接在下列那個攝影時間之前？",
-      "options": {
-        "A": "1分鐘",
-        "B": "5分鐘",
-        "C": "15分鐘",
-        "D": "排尿後"
-      },
-      "page": 1,
-      "answer": "B"
-    },
-    {
-      "id": "102-1-12",
-      "text": "下列關於經皮穿肝膽道引流術(PTCD)的敘述，何者最不正確？",
-      "options": {
-        "A": "術前需先評估病人影像資料，以確定最佳穿刺引流途徑和體位",
-        "B": "術前可給予鎮靜劑",
-        "C": "可用於總膽管癌或胰頭癌造成的膽道阻塞",
-        "D": "急性膽管炎病患不可接受PTCD"
-      },
-      "page": 1,
-      "answer": "C"
-    },
-    {
-      "id": "102-1-13",
-      "text": "下列何項屬於永久性的栓塞物？",
-      "options": {
-        "A": "gelfoam",
-        "B": "air",
-        "C": "blood clot",
-        "D": "coil"
-      },
-      "page": 1,
-      "answer": "D"
-    },
-    {
-      "id": "102-1-14",
-      "text": "在血管攝影術前，讓病人有充分之水份補給(well hydration)，可幫助病人降低下列何種風險？",
-      "options": {
-        "A": "吸入食物",
-        "B": "對比劑過敏",
-        "C": "腎功能損傷",
-        "D": "感染"
-      },
-      "page": 1,
-      "answer": "A"
-    },
-    {
-      "id": "102-1-15",
-      "text": "下列有關介入性影像學檢查之敘述，何者錯誤？",
-      "options": {
-        "A": "比傳統手術之侵犯性和風險性低",
-        "B": "比傳統手術所需之費用低",
-        "C": "可縮短病人之住院日數",
-        "D": "介入性影像檢查可取代所有手術"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "102-1-18",
-      "text": "下列關於關節攝影之敘述，何者錯誤？",
-      "options": {
-        "A": "關節攝影可應用於肩、膝、髖、腕等關節",
-        "B": "膝關節攝影主要用來評估關節囊、半月板及韌帶的破裂",
-        "C": "因為對比劑不直接注入血管，故該檢查仍適用於對碘劑過敏的病人",
-        "D": "實施關節攝影前，須與病人充分溝通，減少不安感"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "102-1-20",
-      "text": "下列何種膽道攝影無需使用對比劑？",
-      "options": {
-        "A": "percutaneous transhepatic cholangiography(PTC)",
-        "B": "endoscopic retrograde cholangiopancreatography(ERCP)",
-        "C": "postoperative cholangiography",
-        "D": "magnetic resonance cholangiopancreatography(MRCP)"
-      },
-      "page": 2,
-      "answer": "B"
-    },
-    {
-      "id": "102-1-21",
-      "text": "肝臟電腦斷層動態攝影的動脈相(arterial phase)，通常於開始注射對比劑後幾秒進行掃描？",
-      "options": {
-        "A": "20～30",
-        "B": "70～80",
-        "C": "100～110",
-        "D": "0～10"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "102-1-22",
-      "text": "下列何種影像偵測輸尿管結石最靈敏？",
-      "options": {
-        "A": "whole abdomen(含 pelvis)MRI with contrast",
-        "B": "whole abdomen(含 pelvis)MRI without contrast",
-        "C": "abdomen(含 pelvis)CT with contrast",
-        "D": "abdomen(含 pelvis)CT without contrast"
-      },
-      "page": 2,
-      "answer": "B"
-    },
-    {
-      "id": "102-1-27",
-      "text": "下圖中箭號所指示的位置為下列何者？",
-      "options": {
-        "A": "ascending aorta",
-        "B": "aortic arch",
-        "C": "descending aorta",
-        "D": "superior vena cava"
-      },
-      "page": 2,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q102-1-27_p3_i1.png"
-    },
-    {
-      "id": "102-1-28",
-      "text": "在電腦斷層攝影動脈相時，下列那一項病灶會呈現最明顯的顯影？",
-      "options": {
-        "A": "肝囊腫(hepatic cyst)",
-        "B": "肝硬化(liver cirrhosis)",
-        "C": "肝細胞癌(hepatocellular carcinoma)",
-        "D": "膽管癌(cholangiocarcinoma)"
-      },
-      "page": 3,
-      "answer": "C"
-    },
-    {
-      "id": "102-1-62",
-      "text": "下列何者不是超音波掃描時攝護腺肥大的徵象？",
-      "options": {
-        "A": "攝護腺壓迫到膀胱底部",
-        "B": "攝護腺肥大常發生於內區(inner zone)",
-        "C": "總攝護腺體積為 3 × 3 × 3 cm3",
-        "D": "攝護腺肥大常造成回音增高"
-      },
-      "page": 6,
-      "answer": "B"
-    },
-    {
-      "id": "102-1-63",
-      "text": "54歲腎移植病人，超音波掃描如下圖，箭號所指最可能為何？",
-      "options": {
-        "A": "假性動脈瘤(pseudoaneurysm)",
-        "B": "血腫(hematoma)",
-        "C": "腸道",
-        "D": "脂肪"
-      },
-      "page": 7,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q102-1-63_p7_i1.png"
-    },
-    {
-      "id": "102-1-65",
-      "text": "84歲男性病人攝護腺肥大，膀胱超音波掃描如下圖，箭號所指最可能為何？",
-      "options": {
-        "A": "膀胱腫瘤",
-        "B": "尿管氣球之假影",
-        "C": "偽動脈瘤",
-        "D": "尿液流動造成"
-      },
-      "page": 7,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q102-1-65_p7_i3.png"
-    },
-    {
-      "id": "102-1-72",
-      "text": "下列有關下泌尿道超音波檢查之敘述，何者錯誤？",
-      "options": {
-        "A": "若病人插有導尿管，須將導尿管綁住，使膀胱脹大",
-        "B": "當膀胱脹時，正常壁厚不應超過4 mm，塌陷時則壁會增厚，但亦不會超過8 mm",
-        "C": "當懷疑膀胱底有沉積物時，須改變姿勢，以分辨腫瘤或其他病灶",
-        "D": "若膀胱壁呈現瀰漫性增厚，其最可能的原因為移形細胞癌"
-      },
-      "page": 9,
-      "answer": "C"
-    },
-    {
-      "id": "102-1-79",
-      "text": "40歲男性病人腎移植後腎功能變差，穿刺檢查後有血尿，灰階及彩色超音波掃描如圖，箭號所指為何？",
-      "options": {
-        "A": "腎囊腫",
-        "B": "假性動脈瘤",
-        "C": "腎盂擴張",
-        "D": "正常之腎動脈"
-      },
-      "page": 9,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q102-1-79_p10_i1.png"
-    },
-    {
-      "id": "102-1-80",
-      "text": "承上題，病人灰階超音波圖中，箭頭所指為何？",
-      "options": {
-        "A": "腎錐體(pyramid)",
-        "B": "腎皮質(cortex)",
-        "C": "腎盂(pelvis)",
-        "D": "腎盞(calyx)"
-      },
-      "page": 10,
-      "answer": "D"
-    },
-    {
-      "id": "101-2-10",
-      "text": "關於血管攝影檢查所使用的Seldinger technique，下列敘述何者最正確？",
-      "options": {
-        "A": "在透視攝影(fluoroscopy)下注射對比劑來尋找血管位置",
-        "B": "將導線送入血管內以便藉導線來引導導管(catheter)到正確位置",
-        "C": "送入導管或 sheath前不一定要移除套管(trocar)",
-        "D": "只用於動脈攝影"
-      },
-      "page": 1,
-      "answer": "B"
-    },
-    {
-      "id": "101-2-11",
-      "text": "在正常的前後位投射(AP projection)下肢動脈血管攝影中，經過脛骨(tibia)內側的動脈為：",
-      "options": {
-        "A": "後脛骨動脈(posterior tibial artery)",
-        "B": "前脛骨動脈(anterior tibial artery)",
-        "C": "腓動脈(peroneal artery)",
-        "D": "膕動脈(popliteal artery)"
-      },
-      "page": 1,
-      "answer": "A"
-    },
-    {
-      "id": "101-2-12",
-      "text": "胃十二指腸動脈通常源自於下列那一條血管？",
-      "options": {
-        "A": "右腎動脈",
-        "B": "肝總動脈",
-        "C": "下腸系(繫)膜動脈",
-        "D": "脾動脈"
-      },
-      "page": 2,
-      "answer": "B"
-    },
-    {
-      "id": "101-2-16",
-      "text": "在完成傳統脊髓攝影後，下列何者是最必須注意的事項？",
-      "options": {
-        "A": "小心預防抽搐的發生",
-        "B": "病人必須平躺2小時",
-        "C": "8小時內不可進食",
-        "D": "如發生頭痛，應立即做腦部血管攝影"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "101-2-17",
-      "text": "子宮動脈栓塞術(uterine artery embolization)，通常用於治療：",
-      "options": {
-        "A": "有症狀之子宮肌瘤",
-        "B": "有症狀之子宮頸癌",
-        "C": "有症狀之子宮內膜癌",
-        "D": "有症狀之子宮內膜異位症"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "101-2-19",
-      "text": "下列何種介入性檢查較不須在X光透視下操作？",
-      "options": {
-        "A": "椎體成形術(vertebroplasty)",
-        "B": "血管成形術(angioplasty)",
-        "C": "肝膿瘍引流",
-        "D": "下腔靜脈過濾器之置放"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "101-2-21",
-      "text": "有一小孩常患腎盂腎炎(pyelonephritis)，若懷疑是否有膀胱輸尿管逆流時，應施行何種檢查？",
-      "options": {
-        "A": "intravenous urography",
-        "B": "retrograde urography",
-        "C": "antegrade urography",
-        "D": "voiding cystourethrography"
-      },
-      "page": 2,
-      "answer": "D"
-    },
-    {
-      "id": "101-2-22",
-      "text": "施行靜脈注射泌尿道攝影(IVU)時，疑似左側腎盂(left renal pelvis)病灶，宜採用何種姿勢攝影？",
-      "options": {
-        "A": "LPO",
-        "B": "RPO",
-        "C": "AP，X光管向腳5～10度",
-        "D": "standing"
-      },
-      "page": 2,
-      "answer": "B"
-    },
-    {
-      "id": "101-2-23",
-      "text": "介入性放射線診療TIPS主要是欲聯結下列何二者間之血流？",
-      "options": {
-        "A": "門靜脈，主動脈",
-        "B": "門靜脈，肝靜脈",
-        "C": "肝動脈，肝靜脈",
-        "D": "肝動脈，門靜脈"
-      },
-      "page": 2,
-      "answer": "B"
-    },
-    {
-      "id": "101-2-24",
-      "text": "有關子宮輸卵管攝影的敘述，下列何者錯誤？",
-      "options": {
-        "A": "適宜偵測所有子宮肌瘤",
-        "B": "輸卵管連繫卵巢和子宮",
-        "C": "應在月經開始後7至10天間做檢查",
-        "D": "主要是用於評估婦女不孕症的原因"
-      },
-      "page": 3,
-      "answer": "A"
-    },
-    {
-      "id": "101-2-25",
-      "text": "下列何種不適宜開刀之腫瘤，最常使用chemoembolization？",
-      "options": {
-        "A": "胃癌",
-        "B": "卵巢癌",
-        "C": "胰臟癌",
-        "D": "肝癌"
-      },
-      "page": 3,
-      "answer": "D"
-    },
-    {
-      "id": "101-2-60",
-      "text": "下列關於成人泌尿系統超音波掃描的敘述，何者錯誤？",
-      "options": {
-        "A": "正常腎臟的長度約為 9～12公分",
-        "B": "正常腎臟之腎竇會呈現低回音",
-        "C": "正常的輸尿管在超音波下不易呈現",
-        "D": "正常腎皮質回音較肝臟低但是比腎錐體的回音高"
-      },
-      "page": 8,
-      "answer": "B"
-    },
-    {
-      "id": "101-2-64",
-      "text": "骨盆腔超音波掃描如下圖，箭號所指為何？",
-      "options": {
-        "A": "膀胱",
-        "B": "攝護腺",
-        "C": "儲精囊",
-        "D": "直腸"
-      },
-      "page": 9,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q101-2-64_p9_i2.png"
-    },
-    {
-      "id": "101-2-67",
-      "text": "下列有關腎囊腫超音波檢查之敘述，何者錯誤？",
-      "options": {
-        "A": "若位於腎竇內，須與腎水腫作鑑別",
-        "B": "一般為均勻無回音性",
-        "C": "腎囊腫內若含結節或粗的間隔(septum)，必定為良性，與一般囊腫無異",
-        "D": "腎囊腫後面常有回音加強現象(distal acoustic enhancement)"
-      },
-      "page": 10,
-      "answer": "C"
-    },
-    {
-      "id": "101-2-68",
-      "text": "下列有關移植腎臟之超音波檢查的敘述，何者錯誤？",
-      "options": {
-        "A": "一般移植腎臟的大小比原來的大",
-        "B": "移植腎之皮質會比病人本身腎臟之皮質寬、厚",
-        "C": "須同時評估其周圍是否有積液",
-        "D": "一般而言，正常之移植腎，其腎實質部分與集尿系統並無清晰之界限"
-      },
-      "page": 10,
-      "answer": "D"
-    },
-    {
-      "id": "101-2-78",
-      "text": "承上題，這個病人下一步該做何種檢查才能正確診斷及適當治療？",
-      "options": {
-        "A": "數位贅減血管攝影(digital subtraction angiography，DSA)",
-        "B": "CT-血管攝影(CT-angiography，CTA)",
-        "C": "MR-血管攝影(MR-angiography，MRA)",
-        "D": "不須再做其他檢查，即可做治療"
-      },
-      "page": 12,
-      "answer": "A"
-    },
-    {
-      "id": "101-1-5",
-      "text": "下列那二項攝影主要目的在觀察TMJ(temporomandibular joint)？①modified Law method ②Schuller method ③panorex ④modified Waters method",
-      "options": {
-        "A": "①②",
-        "B": "①④",
-        "C": "②③",
-        "D": "③④"
-      },
-      "page": 1,
-      "answer": "D"
-    },
-    {
-      "id": "101-1-15",
-      "text": "下列何種栓塞物質最不適用於栓塞骨盆受傷之血管？",
-      "options": {
-        "A": "gelfoam",
-        "B": "lipiodol",
-        "C": "coils",
-        "D": "detachable balloons"
-      },
-      "page": 2,
-      "answer": "C"
-    },
-    {
-      "id": "101-1-16",
-      "text": "進行肝癌血管栓塞時，導管不需經過下列那條血管？",
-      "options": {
-        "A": "主動脈",
-        "B": "下腔靜脈",
-        "C": "腹腔動脈",
-        "D": "肝動脈"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "101-1-17",
-      "text": "下列何種檢查屬於下泌尿道之功能性檢查？",
-      "options": {
-        "A": "逆行性尿路攝影(retrograde urography or pyelography)",
-        "B": "逆行性膀胱攝影(retrograde cystography)",
-        "C": "逆行性尿道攝影(retrograde urethrography)",
-        "D": "排尿膀胱尿道攝影(voiding cystourethrography)"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "101-1-18",
-      "text": "下列關於幼兒靜脈尿路攝影(intravenous urography)的敘述，何者錯誤？",
-      "options": {
-        "A": "檢查前需禁食固體食物4小時",
-        "B": "檢查前一日應給予瀉劑",
-        "C": "應儘量給予非離子對比劑",
-        "D": "檢查前應鼓勵喝足夠的水避免脫水"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
-      "id": "101-1-19",
-      "text": "病人施行靜脈尿路攝影(intravenous urography)時，所採用之對比劑及施打路徑為下列何者？",
-      "options": {
-        "A": "靜脈注射含碘對比劑",
-        "B": "動脈注射含碘對比劑",
-        "C": "靜脈注射含釓對比劑",
-        "D": "動脈注射含釓對比劑"
-      },
-      "page": 3,
-      "answer": "C"
-    },
-    {
-      "id": "101-1-21",
-      "text": "下列何者為施行血管攝影之最佳醫療人員組合？",
-      "options": {
-        "A": "radiologist",
-        "B": "radiologist, radiographer",
-        "C": "radiographer, nurse",
-        "D": "radiologist, radiographer, nurse"
-      },
-      "page": 3,
-      "answer": "D"
-    },
-    {
-      "id": "101-1-23",
-      "text": "下列有關血管攝影術之敘述，何者錯誤？",
-      "options": {
-        "A": "穿刺位置可能持續性出血不止",
-        "B": "可能造成血管壁剝離",
-        "C": "可能穿刺位置感染",
-        "D": "因有用肝素，故不會造成血栓"
-      },
-      "page": 3,
-      "answer": "B"
-    },
-    {
-      "id": "101-1-24",
-      "text": "施行myelography一般穿刺處為：",
-      "options": {
-        "A": "T12～L1",
-        "B": "L3～L4",
-        "C": "T1～T2",
-        "D": "T11～T12"
-      },
-      "page": 3,
-      "answer": "A"
-    },
-    {
-      "id": "101-1-25",
-      "text": "Panorex係屬於下列何種攝影？",
-      "options": {
-        "A": "computed tomography",
-        "B": "conventional tomography",
-        "C": "breast tomosynthesis",
-        "D": "contrast radiography"
-      },
-      "page": 3,
-      "answer": "D"
-    },
-    {
-      "id": "101-1-26",
-      "text": "靜脈注射泌尿攝影(IVU)時，如欲施行nephrotomography，一般其最佳時間為注射後幾分鐘？",
-      "options": {
-        "A": "1",
-        "B": "5",
-        "C": "15",
-        "D": "20"
-      },
-      "page": 3,
-      "answer": "A"
-    },
-    {
-      "id": "101-1-28",
-      "text": "下列那一種情況為施行HSG檢查最適合之適應症？",
-      "options": {
-        "A": "女性不孕症",
-        "B": "男性不孕症",
-        "C": "疑子宮內病變",
-        "D": "輸卵管術後檢查"
-      },
-      "page": 3,
-      "answer": "C"
-    },
-    {
-      "id": "101-1-31",
-      "text": "在作肝癌(HCC)病人之血管栓塞術時，下列何者為其禁忌？",
-      "options": {
-        "A": "肝癌腫瘤破裂(HCC rupture)",
-        "B": "多顆肝癌腫瘤(multiple HCCs)",
-        "C": "門靜脈主幹栓塞(main portal vein thrombosis)",
-        "D": "病人貧血"
-      },
-      "page": 4,
-      "answer": "C"
-    },
-    {
-      "id": "101-1-32",
-      "text": "使用電腦斷層技術施行腎臟腫瘤切片時，病人最常採取下列何種體位？",
-      "options": {
-        "A": "supine position",
-        "B": "prone position",
-        "C": "Fowler's position",
-        "D": "sitting position"
-      },
-      "page": 4,
-      "answer": "D"
-    },
-    {
-      "id": "101-1-45",
-      "text": "下圖中箭號所指的構造為何？",
-      "options": {
-        "A": "anterior cerebral artery(ACA)",
-        "B": "middle cerebral artery(MCA)",
-        "C": "posterior cerebral artery(PCA)",
-        "D": "vertebral artery(VA)"
-      },
-      "page": 5,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q101-1-45_p5_i1.png"
-    },
-    {
-      "id": "101-1-47",
-      "text": "相位對比磁振血管造影(phase contrast MR angiography)的優點為：",
-      "options": {
-        "A": "血管較彎處的失相較不敏感",
-        "B": "取像時間較短",
-        "C": "對擾流造成的訊號喪失較不敏感",
-        "D": "背景的壓抑較好"
-      },
-      "page": 6,
-      "answer": "D"
-    },
-    {
-      "id": "101-1-71",
-      "text": "下列各情況均可能造成腎臟變小或萎縮，何者除外？",
-      "options": {
-        "A": "腎動脈嚴重狹窄",
-        "B": "慢性腎臟炎症疾病",
-        "C": "急性腎炎",
-        "D": "晚期腎炎"
-      },
-      "page": 10,
-      "answer": "D"
-    },
-    {
-      "id": "101-1-72",
-      "text": "腎臟超音波檢查時，下列敘述何者錯誤？",
-      "options": {
-        "A": "橫過脊椎體前且與兩側腎臟之下緣相連，稱為馬蹄腎",
-        "B": "在孩童時期腎臟呈現葉狀型態常為fetal lobulation",
-        "C": "Fetal lobulation易與腎臟梗塞造成之結疤混淆",
-        "D": "Fetal lobulation之壓跡部位常與腎盞(calyces)相對"
-      },
-      "page": 10,
-      "answer": "A"
-    },
-    {
-      "id": "101-1-76",
-      "text": "病人急性腹痛前來求診，理學與電腦斷層檢查懷疑腸道缺血(bowel ischemia)，遂執行血管攝 影檢查，請依所附之下圖回答下列三題： 1.圖中影像中央顯示為那一條血管？",
-      "options": {
-        "A": "肝動脈",
-        "B": "脾動脈",
-        "C": "胃十二指腸動脈",
-        "D": "上腸系(繫)膜動脈"
-      },
-      "page": 10,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q101-1-76_p10_i1.png"
-    },
-    {
-      "id": "101-1-77",
-      "text": "正常情況下該血管之血管攝影在靜脈相(venous phase)可呈現那條血管之顯影？",
-      "options": {
-        "A": "脾靜脈(splenic vein)",
-        "B": "下腸繫膜動脈(inferior mesenteric vein)",
-        "C": "門脈靜脈(portal vein)",
-        "D": "下腔大靜脈(inferior vena cava)"
-      },
-      "page": 10,
-      "answer": "B"
-    },
-    {
-      "id": "101-1-78",
-      "text": "該血管之末端沒有顯影，最可能原因為何？",
-      "options": {
-        "A": "正常變異",
-        "B": "急性血栓",
-        "C": "血管撕裂",
-        "D": "對比劑外漏"
-      },
-      "page": 11,
-      "answer": "A"
-    },
-    {
-      "id": "115-1-1",
-      "text": "下列何項X 光檢查，其中心線投射需採用cephalad？",
-      "options": {
-        "A": "sacrum lateral",
-        "B": "mandible PA axial",
-        "C": "coccyx AP",
-        "D": "schuller method"
-      },
-      "page": 1,
-      "answer": "B"
-    },
-    {
-      "id": "115-1-5",
-      "text": "有關頭顱攝影的敘述，下列何者正確？",
-      "options": {
-        "A": "拍攝rhese 時，病人的MSP 需與桌面形成37 度",
-        "B": "SMV 也可用來拍攝zygomatic arches、sinuses",
-        "C": "拍攝TMJ 時，X 光中心線向頭打25～30 度，可避免雙側TMJ 重疊",
-        "D": "以Waters method 拍攝sinuses 時，MML 需與影像接收板(IR)垂直，可使OML 與影像接收板(IR)形成53 度"
-      },
-      "page": 1,
-      "answer": "B"
-    },
-    {
       "id": "115-1-14",
       "text": "病人從股動脈穿刺的血管攝影沒有辦法成功，從肱動脈穿刺的主動脈血管攝影如下圖，診斷應為下列何者？",
       "options": {
@@ -1179,31 +112,6 @@
       },
       "page": 7,
       "answer": "B"
-    },
-    {
-      "id": "115-1-56",
-      "text": "磁振造影可提供許多種血管攝影(angiography)的波序技術，下列何者不是磁振造影的血管攝影技術？",
-      "options": {
-        "A": "靜脈注射非離子含碘對比劑之血管攝影",
-        "B": "time-of-flight(TOF)angiography",
-        "C": "phase-contrast angiography(PCA)",
-        "D": "arterial spin labeling(ASL)angiography"
-      },
-      "page": 13,
-      "answer": "A"
-    },
-    {
-      "id": "115-1-58",
-      "text": "60 歲男性，臨床表現為言語困難和步態不穩。下圖CTA 影像中箭頭所指為何種狀況？",
-      "options": {
-        "A": "大腦前動脈栓塞(occlusion of the anterior cerebral artery)",
-        "B": "頸腦動脈栓塞(occlusion of the carotid cerebral artery)",
-        "C": "大腦中動脈栓塞(occlusion of the middle cerebral artery)",
-        "D": "基底動脈栓塞(occlusion of the basilar artery)"
-      },
-      "page": 13,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q115-1-58_p14_i1.png"
     },
     {
       "id": "114-2-13",
@@ -1327,18 +235,6 @@
       "answer": "C"
     },
     {
-      "id": "114-2-25",
-      "text": "下列何種膽道攝影無需使用造影劑即可呈現膽道？",
-      "options": {
-        "A": "CT cholangiography",
-        "B": "ERCP",
-        "C": "PTC",
-        "D": "MRCP"
-      },
-      "page": 5,
-      "answer": "D"
-    },
-    {
       "id": "114-2-26",
       "text": "下列何者為肝癌血管栓塞術最主要的禁忌？",
       "options": {
@@ -1351,62 +247,13 @@
       "answer": "C"
     },
     {
-      "id": "114-2-43",
-      "text": "Gadolinium顯影劑增強MR血管攝影，臨床上最常使用下列那種方法顯示？",
+      "id": "114-1-1",
+      "text": "下列何種X光片，最常在臨床上用於排除鎖骨後的肺部鈣化和腫塊？",
       "options": {
-        "A": "maximum intensity projection(MIP)",
-        "B": "minimal intensity projection(MinIP)",
-        "C": "surface rendering",
-        "D": "fiber trajectory"
-      },
-      "page": 9,
-      "answer": "A"
-    },
-    {
-      "id": "114-2-64",
-      "text": "關於膀胱超音波的敘述，下列何者正確？",
-      "options": {
-        "A": "正常的膀胱為均勻的中度回音",
-        "B": "膀胱體積測量為橫徑、前後徑、上下徑的乘積，再乘以0.52",
-        "C": "慢性膀胱炎會呈現較薄的膀胱壁",
-        "D": "膀胱結石會造成後方回音增強"
-      },
-      "page": 14,
-      "answer": "B"
-    },
-    {
-      "id": "114-2-68",
-      "text": "附圖中箭號所指高回音的部位最可能為何？",
-      "options": {
-        "A": "腎髓質(medulla)",
-        "B": "腎竇部(renal sinus)",
-        "C": "腎盂(pelvis)",
-        "D": "腎皮質(cortex)"
-      },
-      "page": 15,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q114-2-68_p15_i2.png"
-    },
-    {
-      "id": "114-2-72",
-      "text": "在超音波影像上，一般成人正常的腎臟長徑約為多少cm？",
-      "options": {
-        "A": "16～18",
-        "B": "10～12",
-        "C": "6～8",
-        "D": "2～4"
-      },
-      "page": 17,
-      "answer": "B"
-    },
-    {
-      "id": "114-1-2",
-      "text": "下列何種攝影方法適合用於診斷zygomatic arches骨折？",
-      "options": {
-        "A": "submentovertex(SMV)",
-        "B": "modified Law method",
-        "C": "Caldwell method",
-        "D": "Rhese method"
+        "A": "chest AP lordotic projection",
+        "B": "chest lateral decubitus position",
+        "C": "chest anterior oblique position",
+        "D": "chest posterior oblique position"
       },
       "page": 1,
       "answer": "A"
@@ -1472,18 +319,6 @@
       "answer": "D"
     },
     {
-      "id": "114-1-23",
-      "text": "總膽管及胰管注入十二指腸的部分是屬於下列何者？",
-      "options": {
-        "A": "first portion",
-        "B": "second portion",
-        "C": "third portion",
-        "D": "fourth portion"
-      },
-      "page": 5,
-      "answer": "B"
-    },
-    {
       "id": "114-1-24",
       "text": "實施hysterosalpingography時，如病患輸卵管沒有阻塞，則可看到顯影劑溢出至下列何部位？",
       "options": {
@@ -1508,18 +343,6 @@
       "answer": "D"
     },
     {
-      "id": "114-1-26",
-      "text": "對於攝護腺切片(prostate biopsy)，目前最常使用之定位影像工具為：",
-      "options": {
-        "A": "CT",
-        "B": "MRI",
-        "C": "transrectal ultrasound",
-        "D": "fluoroscopy"
-      },
-      "page": 5,
-      "answer": "C"
-    },
-    {
       "id": "114-1-32",
       "text": "下列何者是自發性蜘蛛網膜下出血(spontaneous subarachnoid hemorrhage)最常見的原因？",
       "options": {
@@ -1532,79 +355,16 @@
       "answer": "A"
     },
     {
-      "id": "114-1-33",
-      "text": "臨床醫師安排三天前缺血性腦中風的病人做腦部斷層掃描追蹤，其目的最不可能是下列何者？",
+      "id": "114-1-61",
+      "text": "下列何者不是罹患膽結石的風險因素(risk factors)？",
       "options": {
-        "A": "考慮取栓術的治療",
-        "B": "中風範圍是否變大",
-        "C": "是否有出血",
-        "D": "是否有明顯的腫塊效應"
-      },
-      "page": 6,
-      "answer": "A"
-    },
-    {
-      "id": "114-1-34",
-      "text": "關於下圖之電腦斷層檢查，下列敘述何者最適當？",
-      "options": {
-        "A": "此圖為施打顯影劑後之電腦斷層影像，顯影劑已進入腎臟集尿系統",
-        "B": "此圖為施打顯影劑後之電腦斷層影像，顯影劑已進入腎臟實質",
-        "C": "此圖為未施打顯影劑之電腦斷層影像",
-        "D": "此圖為施打顯影劑後之電腦斷層影像，顯影劑已進入腎動脈"
-      },
-      "page": 7,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q114-1-34_p7_i1.png"
-    },
-    {
-      "id": "114-1-62",
-      "text": "腎臟超音波掃描時，發現腎盂(renal pelvis)及多個腎盞(calyces)擴張如下圖，最有可能的 診斷為何？",
-      "options": {
-        "A": "輸尿管阻塞",
-        "B": "腎盂旁囊腫(parapelvic renal cyst)",
-        "C": "多囊腎(polycystic kidney)",
-        "D": "多囊性發育不良腎(multicystic dysplastic kidney)"
+        "A": "女性",
+        "B": "年齡＞40歲",
+        "C": "肥胖",
+        "D": "膽息肉"
       },
       "page": 12,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q114-1-62_p13_i1.png"
-    },
-    {
-      "id": "114-1-63",
-      "text": "腎臟超音波掃描，發現多處的腎盞(calyxes)呈現高回音性病灶併有後方回音陰影(posterior acoustic shadows)如下圖，最有可能的診斷為何？",
-      "options": {
-        "A": "鹿角結石 (staghorn stone)",
-        "B": "腎臟血管肌肉脂肪瘤(renal angiomyolipoma)",
-        "C": "單純性腎囊腫(simple renal cyst)",
-        "D": "腎細胞癌(renal cell carcinoma)"
-      },
-      "page": 13,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q114-1-63_p13_i2.png"
-    },
-    {
-      "id": "114-1-72",
-      "text": "漲尿的正常膀胱最不可能產生下列何種超音波掃描的假影？",
-      "options": {
-        "A": "edge shadow",
-        "B": "distal shadow",
-        "C": "distal acoustic enhancement",
-        "D": "section-thickness artifact"
-      },
-      "page": 15,
-      "answer": "B"
-    },
-    {
-      "id": "114-1-73",
-      "text": "下列有關陰囊超音波掃描的敘述，何者錯誤？",
-      "options": {
-        "A": "使用 Valsalva 方法主要用於診斷睪丸腫瘤",
-        "B": "睪丸發炎時常有腫大現象",
-        "C": "睪丸扭曲(torsion)時會減少或沒有血流",
-        "D": "可評估精索靜脈曲張(varicocele)之程度"
-      },
-      "page": 16,
-      "answer": "B"
+      "answer": "A"
     },
     {
       "id": "113-2-13",
@@ -1703,18 +463,6 @@
       "answer": "D"
     },
     {
-      "id": "113-2-33",
-      "text": "腦部電腦斷層CTA檢查之適應症，下列何者最為正確？",
-      "options": {
-        "A": "腦動脈瘤",
-        "B": "腦內異物",
-        "C": "腦內腫瘤",
-        "D": "腦膜炎"
-      },
-      "page": 6,
-      "answer": "A"
-    },
-    {
       "id": "113-1-2",
       "text": "在KUB 攝影時，其中心射束應與下列何者平行？",
       "options": {
@@ -1737,18 +485,6 @@
       },
       "page": 3,
       "answer": "C"
-    },
-    {
-      "id": "113-1-13",
-      "text": "下列何者對腹內膿腫而高燒的病人有幫助？",
-      "options": {
-        "A": "影像導引切片術",
-        "B": "影像導引引流術",
-        "C": "影像導引注射術",
-        "D": "經導管動脈栓塞術"
-      },
-      "page": 3,
-      "answer": "D"
     },
     {
       "id": "113-1-14",
@@ -1847,19 +583,6 @@
       "answer": "D"
     },
     {
-      "id": "113-1-30",
-      "text": "顯影電腦斷層檢查如下圖，下列敘述何者最適當？",
-      "options": {
-        "A": "multiplanr reformat image of coronal nephrogenic phase image",
-        "B": "maximal intensity projection of coronal excretory phase image",
-        "C": "maximal intensity projection of sagittal nephrogenic phase image",
-        "D": "maximal intensity projection of sagittal excretory phase image"
-      },
-      "page": 7,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q113-1-30_p8_i1.png"
-    },
-    {
       "id": "113-1-31",
       "text": "電腦斷層檢查如下圖，下列敘述何者最適當？",
       "options": {
@@ -1873,29 +596,16 @@
       "image": "特殊攝影期末101-115/images/q113-1-31_p8_i2.png"
     },
     {
-      "id": "113-1-64",
-      "text": "以彩色都卜勒掃描膀胱時，下列何種疾病可能產生閃爍假影(twinkling artifact)？",
+      "id": "113-1-40",
+      "text": "電腦斷層攝影在施打造影劑前，須評估病人那一項生化檢查？",
       "options": {
-        "A": "膀胱結石",
-        "B": "膀胱憩室",
-        "C": "膀胱炎",
-        "D": "輸尿管囊腫"
+        "A": "glucose",
+        "B": "uric acid",
+        "C": "creatinine",
+        "D": "cholesterol"
       },
-      "page": 15,
-      "answer": "D"
-    },
-    {
-      "id": "113-1-68",
-      "text": "附圖為陰囊超音波影像，其最可能的診斷為下列何者？",
-      "options": {
-        "A": "testicular tumor",
-        "B": "hydrocele",
-        "C": "hernia",
-        "D": "hematoma"
-      },
-      "page": 15,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q113-1-68_p16_i1.png"
+      "page": 10,
+      "answer": "A"
     },
     {
       "id": "112-2-2",
@@ -1979,273 +689,6 @@
         "D": "T-tube cholangiography"
       },
       "page": 5,
-      "answer": "C"
-    },
-    {
-      "id": "112-2-41",
-      "text": "腦部電腦斷層掃描影像中，箭號A所指的解剖構造為何？",
-      "options": {
-        "A": "基底動脈(basilar artery)",
-        "B": "第四腦室(fourth ventricle)",
-        "C": "鞍上腦池(suprasellar cistern)",
-        "D": "視丘(thalamus)"
-      },
-      "page": 8,
-      "answer": "B"
-    },
-    {
-      "id": "112-2-42",
-      "text": "有關可視照野(field of view, FOV)的敘述，下列何者錯誤？",
-      "options": {
-        "A": "影像的切面厚度(slice thickness)大小與FOV無關",
-        "B": "顯示(display)FOV可等於或小於掃描(scan) FOV",
-        "C": "體素(voxel size)的大小決定於slice thickness、FOV和矩陣尺寸(matrix size)",
-        "D": "在相同的matrix size下，掃描的FOV愈大則像素(pixel size)越小"
-      },
-      "page": 9,
-      "answer": "D"
-    },
-    {
-      "id": "112-2-43",
-      "text": "下列何者是順磁性(paramagnetic)的材料？",
-      "options": {
-        "A": "釓(gadolinium)",
-        "B": "鈣(calcium)",
-        "C": "金(gold)",
-        "D": "水(water)"
-      },
-      "page": 9,
-      "answer": "A"
-    },
-    {
-      "id": "112-2-44",
-      "text": "MRI安全準則中 RF power deposition 頭部溫度限制，下列何者正確？",
-      "options": {
-        "A": "＜38°C",
-        "B": "＞20°C",
-        "C": "＜10°C",
-        "D": "＞40°C"
-      },
-      "page": 9,
-      "answer": "A"
-    },
-    {
-      "id": "112-2-45",
-      "text": "在急性腦梗塞的MR spectroscopy(MRS)頻譜(TE=270 msec)上面，可看到一個明顯 lactate peak在1.3 ppm 的地方，其形態為何？",
-      "options": {
-        "A": "向上雙峰",
-        "B": "向下雙峰",
-        "C": "向上單峰",
-        "D": "向下單峰"
-      },
-      "page": 9,
-      "answer": "A"
-    },
-    {
-      "id": "112-2-46",
-      "text": "頭頸部腫瘤患者的影像如下圖，此可能是何種權重之 MRI影像？",
-      "options": {
-        "A": "T1WI",
-        "B": "T2WI",
-        "C": "T1WI with fat suppression",
-        "D": "contrast-enhanced T1WI with fat suppression"
-      },
-      "page": 9,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q112-2-46_p10_i1.png"
-    },
-    {
-      "id": "112-2-47",
-      "text": "有一位女性病患作腦部磁振造影檢查如下圖，掃描後在影像的下顎整個範圍出現大片全黑的訊號，此時應 為：",
-      "options": {
-        "A": "選用不同的相位(phase)方向，重新檢查一次",
-        "B": "病患為先天異常，影像可以繼續檢查",
-        "C": "進入檢查室，把頭部線圈換成其他線圈即可改善",
-        "D": "進入檢查室，尋找是否有假牙或金屬異物在病患頭部範圍"
-      },
-      "page": 10,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q112-2-47_p10_i2.png"
-    },
-    {
-      "id": "112-2-48",
-      "text": "關於各項磁振造影技術所利用組織壓抑的原理與抑制方式，下列何者錯誤？",
-      "options": {
-        "A": "流體衰減的反轉回復(FLAIR)是一種抑制流體訊號的技術",
-        "B": "化學頻譜的預飽和(chemical presaturation)是一種消除脂肪等特殊組織的技術",
-        "C": "磁量轉移(magnetization transfer)的組織壓抑是一種抑制巨相水訊號的技術",
-        "D": "空間的預飽和(spatial presaturation)是一種用來降低結構相鄰等感興趣所造成的運動及流動假影的技術"
-      },
-      "page": 10,
-      "answer": "C"
-    },
-    {
-      "id": "112-2-49",
-      "text": "MRI scanner所在的房間屬於MRI safety zones中之：",
-      "options": {
-        "A": "zone I",
-        "B": "zone II",
-        "C": "zone III",
-        "D": "zone IV"
-      },
-      "page": 11,
-      "answer": "D"
-    },
-    {
-      "id": "112-2-50",
-      "text": "下列何種情形最可能會發生磁振造影T1-weighted image上之dentate nuclei出現高訊號？",
-      "options": {
-        "A": "多次使用ionic iodinated contrast medium後",
-        "B": "多次使用non-ionic iodinated contrast medium後",
-        "C": "多次使用linear gadolinium-based contrast agent後",
-        "D": "多次使用macrocyclic gadolinium-based contrast agent後"
-      },
-      "page": 11,
-      "answer": "C"
-    },
-    {
-      "id": "112-2-51",
-      "text": "使用相位對比(phase contrast)磁振造影技術測量血液流速時，若產生velocity-encoding(VENC)aliasing， 則可使用下列何種方法去除此現象？",
-      "options": {
-        "A": "提高VENC的設定值",
-        "B": "降低VENC的設定值",
-        "C": "關掉VENC",
-        "D": "增加 field of view(FOV)"
-      },
-      "page": 11,
-      "answer": "A"
-    },
-    {
-      "id": "112-2-52",
-      "text": "下列何種現象與MRI中out-of-phase imaging(Dixon technique)有關？",
-      "options": {
-        "A": "magnetization transfer",
-        "B": "phase contrast",
-        "C": "chemical shift",
-        "D": "susceptibility"
-      },
-      "page": 11,
-      "answer": "C"
-    },
-    {
-      "id": "112-2-53",
-      "text": "在一般的spin echo掃描中，如使用相同的重複時間(repetition time, TR)，下列何者能增加切面張數？",
-      "options": {
-        "A": "將接收頻寬(receive bandwidth)從16 kHz變成32 kHz",
-        "B": "將切面厚度(slice thickness)從10 mm變成5 mm",
-        "C": "將相位編碼(phase encoding)數目從256變成128",
-        "D": "將激發次數(number of excitation, NEX)從4變成1"
-      },
-      "page": 11,
-      "answer": "A"
-    },
-    {
-      "id": "112-2-54",
-      "text": "1 Tesla的磁振造影掃描儀中，已知主磁場強度最大值和最小值的差值為0.04 G，下列何者為主磁場的不均勻度 (inhomogeneity)？",
-      "options": {
-        "A": "±1 ppm",
-        "B": "±2 ppm",
-        "C": "±4 ppm",
-        "D": "±8 ppm"
-      },
-      "page": 11,
-      "answer": "B"
-    },
-    {
-      "id": "112-2-55",
-      "text": "關於超導磁鐵磁振掃描儀，下列敘述何者正確？",
-      "options": {
-        "A": "超導材質在溫度越低時，電阻越大",
-        "B": "超導材質需要維持在約 4 K的溫度",
-        "C": "超導磁鐵所製作的MRI通常重量大於50噸",
-        "D": "目前超導體MRI磁場強度最大至9.4 T"
-      },
-      "page": 12,
-      "answer": "B"
-    },
-    {
-      "id": "112-2-56",
-      "text": "磁振造影施打含釓造影劑的建議劑量，最適當範圍為多少mmol/kg？",
-      "options": {
-        "A": "0.1～0.3",
-        "B": "1～3",
-        "C": "5～10",
-        "D": "0.01～0.05"
-      },
-      "page": 12,
-      "answer": "A"
-    },
-    {
-      "id": "112-2-57",
-      "text": "下列磁振造影脈衝序列，那一項最適合抑制脂肪訊號？",
-      "options": {
-        "A": "magnetization transfer",
-        "B": "FLAIR technique",
-        "C": "STIR technique",
-        "D": "T1 weighted image technique"
-      },
-      "page": 12,
-      "answer": "C"
-    },
-    {
-      "id": "112-2-58",
-      "text": "下列何種磁振造影技術最不會使用到EPI(echo planar imaging)脈衝序列？",
-      "options": {
-        "A": "腦功能性磁振造影(functional MRI)",
-        "B": "對比增強磁共振血管造影(contrast enhanced MRA)",
-        "C": "擴散張量影像(diffusion tensor imaging)",
-        "D": "血流灌注影像(perfusion imaging)"
-      },
-      "page": 12,
-      "answer": "B"
-    },
-    {
-      "id": "112-2-59",
-      "text": "施行腰椎磁振造影時，下列敘述何者最正確？",
-      "options": {
-        "A": "要求病患停止呼吸",
-        "B": "嚴重疼痛的病人，要增加激發(excitation)次數以求更清晰的影像",
-        "C": "使用fast spin echo T2加權影像比STIR更易偵測出骨髓疾病",
-        "D": "檢查疑有椎間盤脫出時可提供墊物使病人膝部彎曲"
-      },
-      "page": 12,
-      "answer": "D"
-    },
-    {
-      "id": "112-2-60",
-      "text": "下列何者可能導致MRI腦室中CSF訊號增高？",
-      "options": {
-        "A": "high velocity",
-        "B": "turbulent",
-        "C": "even-echo rephasing",
-        "D": "dephasing"
-      },
-      "page": 12,
-      "answer": "C"
-    },
-    {
-      "id": "112-2-62",
-      "text": "新生兒腎臟超音波掃描時，發現腎皮質回音強度明顯高於腎髓質(如下圖所示)，最有可能的診斷為何？",
-      "options": {
-        "A": "正常現象",
-        "B": "腎水腫(hydronephrosis)",
-        "C": "多囊腎(polycystic kidney)",
-        "D": "多囊性發育不良腎(multicystic dysplastic kidney)"
-      },
-      "page": 13,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q112-2-62_p13_i1.png"
-    },
-    {
-      "id": "112-2-66",
-      "text": "下列何者於腎臟超音波掃描時，會呈現腎臟體積變小？",
-      "options": {
-        "A": "多囊腎(polycystic kidney)",
-        "B": "急性腎盂腎炎(acute pyelonephritis)",
-        "C": "慢性腎絲球腎炎(chronic glomerulonephritis)",
-        "D": "水腎(hydronephrosis)"
-      },
-      "page": 14,
       "answer": "C"
     },
     {
@@ -2345,18 +788,6 @@
       "answer": "A"
     },
     {
-      "id": "112-1-25",
-      "text": "下列那一種膽道的影像學檢查，不需要注射顯影劑？",
-      "options": {
-        "A": "PTC",
-        "B": "T-tube cholangiography",
-        "C": "ERCP",
-        "D": "MRCP"
-      },
-      "page": 5,
-      "answer": "D"
-    },
-    {
       "id": "112-1-26",
       "text": "下列何種檢查通常不需要使用透視X光系統做為輔助？",
       "options": {
@@ -2367,44 +798,6 @@
       },
       "page": 5,
       "answer": "C"
-    },
-    {
-      "id": "112-1-37",
-      "text": "患者接受 CT angiography檢查，操作者使用bolus tracking造影追蹤技術，下圖白色圓圈處ROI(reigon of interest)所指為何？",
-      "options": {
-        "A": "肺動脈(pulmonary artery)",
-        "B": "升主動脈(ascending aorta)",
-        "C": "降主動脈(descending aorta)",
-        "D": "右心室(right ventricle)"
-      },
-      "page": 8,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q112-1-37_p9_i1.png"
-    },
-    {
-      "id": "112-1-62",
-      "text": "腎臟超音波掃描時，發現多處的腎錐體(pyramids)呈現高回音性，下圖最有可能的診斷為何？",
-      "options": {
-        "A": "腎髓質鈣化症(medullary nephrocalcinosis)",
-        "B": "血管肌肉脂肪瘤(angiomyolipoma)",
-        "C": "正常現象",
-        "D": "腎盂腎炎(pyelonephritis)"
-      },
-      "page": 14,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q112-1-62_p14_i2.png"
-    },
-    {
-      "id": "112-1-64",
-      "text": "超音波掃描膀胱時，一般較不易出現下列那種類型的假影(artifact)？",
-      "options": {
-        "A": "鏡像假影(mirror artifact)",
-        "B": "音波迴盪假影(reverberation artifact)",
-        "C": "旁瓣假影(side lobe artifact)",
-        "D": "音波增強假影(acoustic enhancement artifact)"
-      },
-      "page": 15,
-      "answer": "B"
     },
     {
       "id": "112-1-72",
@@ -2429,6 +822,19 @@
       },
       "page": 3,
       "answer": "B"
+    },
+    {
+      "id": "111-2-14",
+      "text": "下圖腰椎oblique projection影像中，使用椎體成形術(vertebroplasty)時針由何處進入？",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "page": 3,
+      "answer": "B",
+      "image": "特殊攝影期末101-115/images/q111-2-14_p3_i1.png"
     },
     {
       "id": "111-2-15",
@@ -2515,104 +921,6 @@
       "answer": "A"
     },
     {
-      "id": "111-2-43",
-      "text": "在 phase contrast(PC)MR血管攝影中，固定不動的組織在灰階相位影像是什麼顏色？",
-      "options": {
-        "A": "白",
-        "B": "灰",
-        "C": "黑",
-        "D": "黑、白、灰都有可能"
-      },
-      "page": 10,
-      "answer": "B"
-    },
-    {
-      "id": "111-2-46",
-      "text": "如下圖，在這組2D TOF MRA上面的每一張影像，左邊的椎動脈都沒有訊號，下列何者為可能的結論？",
-      "options": {
-        "A": "可以確定是血管阻塞",
-        "B": "可能有turbulent flow",
-        "C": "是因為flow void",
-        "D": "可能是逆向的flow"
-      },
-      "page": 10,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q111-2-46_p10_i1.png"
-    },
-    {
-      "id": "111-2-48",
-      "text": "下列何種MR angiography技術具有較快速、較不受turbulent flow影響且signal-to-noise ratio(SNR)高的優勢？",
-      "options": {
-        "A": "contrast-enhanced MRA",
-        "B": "2D time-of-flight(TOF)MRA",
-        "C": "3D time-of-flight(TOF)MRA",
-        "D": "phase-contrast(PC)MRA"
-      },
-      "page": 11,
-      "answer": "A"
-    },
-    {
-      "id": "111-2-53",
-      "text": "下列何者為inflow MRA之優點？",
-      "options": {
-        "A": "lower resolution",
-        "B": "sensitive to slow flow",
-        "C": "saturation of in-plane flow",
-        "D": "venetian blind artifact"
-      },
-      "page": 12,
-      "answer": "B"
-    },
-    {
-      "id": "111-2-63",
-      "text": "急性睪丸炎和睪丸扭轉於超音波影像最重要的鑑別差異為：",
-      "options": {
-        "A": "睪丸內血流變化",
-        "B": "睪丸大小變化",
-        "C": "睪丸內回音變化",
-        "D": "副睪大小變化"
-      },
-      "page": 14,
-      "answer": "A"
-    },
-    {
-      "id": "111-2-64",
-      "text": "下圖為陰囊的超音波影像，最有可能的診斷為：",
-      "options": {
-        "A": "睪丸炎(orchitis)",
-        "B": "精細胞瘤(seminoma)",
-        "C": "睪丸鞘膜積液(hydrocele)",
-        "D": "精索靜脈曲張(varicocele)"
-      },
-      "page": 14,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q111-2-64_p14_i2.png"
-    },
-    {
-      "id": "111-2-66",
-      "text": "有一4歲男童在超音波檢查時發現於右腎上極(upper pole)處有一低回音的實質性腫塊，最可能的診斷為：",
-      "options": {
-        "A": "嬰兒型多囊腎(infantile polycystic kidney disease)",
-        "B": "威姆氏瘤(Wilms' tumor)",
-        "C": "腎結石(kidney stone)",
-        "D": "馬蹄腎(horseshoe kidney)"
-      },
-      "page": 15,
-      "answer": "B"
-    },
-    {
-      "id": "111-2-72",
-      "text": "下列何者不是超音波掃描中攝護腺肥大的徵象？",
-      "options": {
-        "A": "攝護腺壓迫到膀胱底部",
-        "B": "排尿後可伴隨膀胱的餘尿增加",
-        "C": "可伴隨膀胱壁增厚",
-        "D": "攝護腺的最大徑約3公分"
-      },
-      "page": 16,
-      "answer": "D"
-    },
-    {
       "id": "111-1-11",
       "text": "就 心導管攝影、腦部血管攝影以及腹部血管攝影，下列敘述何者錯誤？",
       "options": {
@@ -2671,19 +979,6 @@
       },
       "page": 3,
       "answer": "D"
-    },
-    {
-      "id": "111-1-18",
-      "text": "患者在那一種擺位下接受檢查，才能得到下圖的影像？",
-      "options": {
-        "A": "LAO position",
-        "B": "RAO position",
-        "C": "AP projection",
-        "D": "PA projection"
-      },
-      "page": 3,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q111-1-18_p3_i1.png"
     },
     {
       "id": "111-1-20",
@@ -2795,107 +1090,6 @@
       "answer": "D"
     },
     {
-      "id": "111-1-35",
-      "text": "先天性心臟病患者，胸部CT angiography顯示全肺靜脈迴流異常(total anomalous pulmonary venous return, TAPVR)如下圖所示。此影像是用何種後處理技術？",
-      "options": {
-        "A": "maximum intensity projection(MIP)",
-        "B": "minimum intensity projection(MinIP)",
-        "C": "surface rendering(SR)",
-        "D": "partial volume averaging(PVA)"
-      },
-      "page": 7,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q111-1-35_p7_i2.png"
-    },
-    {
-      "id": "111-1-40",
-      "text": "附圖為肝臟電腦斷層動態顯影，由圖中可以判斷肝臟最可能為那一項病灶？",
-      "options": {
-        "A": "hepatic cyst",
-        "B": "cholangiocarcinoma",
-        "C": "hepatocellular carcinoma",
-        "D": "liver hemangioma"
-      },
-      "page": 8,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q111-1-40_p9_i1.png"
-    },
-    {
-      "id": "111-1-63",
-      "text": "下圖為膀胱的彩色都卜勒影像(橫向掃描)，箭號所指的是：",
-      "options": {
-        "A": "輸尿管尿液射入膀胱(ureteric jet)",
-        "B": "膀胱炎(cystitis)",
-        "C": "膀胱癌(bladder cancer)",
-        "D": "膀胱瘜肉(polyp)"
-      },
-      "page": 12,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q111-1-63_p12_i2.png"
-    },
-    {
-      "id": "111-1-65",
-      "text": "關於腎臟超音波常見的病灶，下列敘述何者錯誤？",
-      "options": {
-        "A": "腎結石(renal stone)會出現後方回音衰減",
-        "B": "腎囊腫(cyst)會出現後方回音增強",
-        "C": "平滑肌脂肪血管瘤(angiomyolipoma)通常為低回音",
-        "D": "水腎(hydronephrosis)通常在腎盂處，呈現擴張的無回音區"
-      },
-      "page": 13,
-      "answer": "A"
-    },
-    {
-      "id": "111-1-66",
-      "text": "下圖為腎臟超音波縱向影像，箭號所指的是：",
-      "options": {
-        "A": "angiomyolipoma(AML)",
-        "B": "renal cell carcinoma(RCC)",
-        "C": "renal cyst",
-        "D": "renal stone"
-      },
-      "page": 13,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q111-1-66_p13_i1.png"
-    },
-    {
-      "id": "111-1-71",
-      "text": "附圖為膀胱超音波影像，箭號所指最可能為何？",
-      "options": {
-        "A": "移行細胞癌(transitional cell carcinoma)",
-        "B": "輸尿管膨出(ureterocele)",
-        "C": "血腫(hematoma)",
-        "D": "膀胱結石(bladder stone)"
-      },
-      "page": 14,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q111-1-71_p14_i1.png"
-    },
-    {
-      "id": "111-1-73",
-      "text": "為使操作放射師能觀測透視的輻射劑量輸出，在美國FDA要求下於2006年後生產的透視機組，應提供那些設 備或數據供使用？①dose area product(DAP) ②cumulative total dose(CTD) ③high-level dose detective(HLD) ④entrance skin dose detective(ESDD)",
-      "options": {
-        "A": "僅③④",
-        "B": "僅①②",
-        "C": "僅①③",
-        "D": "①②③④"
-      },
-      "page": 15,
-      "answer": "A"
-    },
-    {
-      "id": "111-1-74",
-      "text": "依據「輻射醫療曝露品質保證標準」規定，醫療機構使用下列那些設備時，不用設置醫療曝露品質保證組織 及專業人員？①核醫用電腦斷層掃描儀 ②診斷用電腦斷層機組 ③加馬刀 ④乳房X光攝影儀 ⑤心導管 透視機組 ⑥血管攝影透視機組",
-      "options": {
-        "A": "①④⑤",
-        "B": "①②③",
-        "C": "⑤⑥",
-        "D": "僅①⑤"
-      },
-      "page": 15,
-      "answer": "A"
-    },
-    {
       "id": "110-2-11",
       "text": "關於男性排尿膀胱尿道攝影(voiding cystourethrography)的技術，下列何者正確？",
       "options": {
@@ -3004,18 +1198,6 @@
       "answer": "D"
     },
     {
-      "id": "110-2-24",
-      "text": "有關幼兒血管攝影的敘述，下列何者錯誤？",
-      "options": {
-        "A": "需要在麻醉下進行血管攝影",
-        "B": "應該讓其父母進入血管攝影室陪伴",
-        "C": "病人若為新生兒要特別注意其體溫",
-        "D": "執行血管攝影前，其父母或法定監護人一定要簽署同意書"
-      },
-      "page": 4,
-      "answer": "B"
-    },
-    {
       "id": "110-2-25",
       "text": "在T-tube膽道攝影(cholangiography)中，T-tube之放置經由下列那些解剖結構？",
       "options": {
@@ -3040,17 +1222,16 @@
       "answer": "C"
     },
     {
-      "id": "110-2-32",
-      "text": "頭部CTA的影像如下圖，下列何者為最適當之診斷？",
+      "id": "110-1-7",
+      "text": "Swimmer's lateral projeciton可以清楚呈現下列那一項構造？",
       "options": {
-        "A": "aneurysm",
-        "B": "intracerebral hematoma",
-        "C": "brain tumor",
-        "D": "arteriovenous malformation(AVM)"
+        "A": "第三頸椎／第四頸椎椎間盤",
+        "B": "第七頸椎",
+        "C": "第一頸椎／第二頸椎",
+        "D": "第五神經孔(neuroforamen)"
       },
-      "page": 5,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q110-2-32_p5_i1.png"
+      "page": 2,
+      "answer": "B"
     },
     {
       "id": "110-1-11",
@@ -3060,18 +1241,6 @@
         "B": "Fowler's可描述X射線之投影方向",
         "C": "後前投射表示身體後方貼近影像接收器",
         "D": "子宮輸卵管造影術採用Sims' position"
-      },
-      "page": 2,
-      "answer": "B"
-    },
-    {
-      "id": "110-1-12",
-      "text": "關於腹部攝影的敘述，下列何者最正確？",
-      "options": {
-        "A": "腹部直立(erect)AP攝影，主要目的為診斷骨盆發炎",
-        "B": "若腎臟為攝影重點，病人應採PA，以利X光的良好穿透",
-        "C": "曝露時間應選在吸飽氣時為宜",
-        "D": "KUB中心線在腸骨(iliac crest)處，下界必須包括恥骨聯合的一半"
       },
       "page": 2,
       "answer": "B"
@@ -3149,6 +1318,18 @@
       "answer": "A"
     },
     {
+      "id": "110-1-21",
+      "text": "正常解剖位置，下列那一條血管通常由左鎖骨下動脈分枝？",
+      "options": {
+        "A": "右總頸動脈",
+        "B": "左總頸動脈",
+        "C": "右椎動脈",
+        "D": "左椎動脈"
+      },
+      "page": 3,
+      "answer": "B"
+    },
+    {
       "id": "110-1-22",
       "text": "子宮輸卵管攝影(HSG)之施行時段，是在病患月經開始後多久較適合？",
       "options": {
@@ -3210,78 +1391,17 @@
       "image": "特殊攝影期末101-115/images/q110-1-28_p5_i1.png"
     },
     {
-      "id": "110-1-52",
-      "text": "相對於contrast enhanced MR angiography，下列何者是time-of-flight MR angiography的優點？",
+      "id": "110-1-43",
+      "text": "附圖中箭號所指那一項最正確？",
       "options": {
-        "A": "成像時間較短",
-        "B": "可提供所有血流方向訊息",
-        "C": "不容易受靜脈訊號污染",
-        "D": "可和亞急性血塊分辨"
+        "A": "腸液外漏",
+        "B": "尿液外漏",
+        "C": "膽汁外漏",
+        "D": "胃液外漏"
       },
-      "page": 8,
-      "answer": "C"
-    },
-    {
-      "id": "110-1-60",
-      "text": "下列有 關腎臟超音波掃描的敘述，何者正確？",
-      "options": {
-        "A": "兩側腎臟的位置為左低右高",
-        "B": "腎臟結石為高回音性",
-        "C": "腎臟為後腹腔構造，不會隨呼吸而移動",
-        "D": "腎結石引起的水腎呈現高回音性，更容易發現腎結石"
-      },
-      "page": 10,
-      "answer": "C"
-    },
-    {
-      "id": "110-1-62",
-      "text": "腎臟超音波影像如附圖，最有可能的診斷為何？",
-      "options": {
-        "A": "renal cyst",
-        "B": "renal cell carcinoma",
-        "C": "hydronephrosis",
-        "D": "angiomyolipoma"
-      },
-      "page": 10,
+      "page": 7,
       "answer": "B",
-      "image": "特殊攝影期末101-115/images/q110-1-62_p11_i1.png"
-    },
-    {
-      "id": "110-1-64",
-      "text": "比較正常的總頸動脈(CCA)、外頸動脈(ECA)、內頸動脈(ICA)都卜勒頻譜阻抗(resistance)，下列 何者正確？",
-      "options": {
-        "A": "CCA與ECA為高阻抗，ICA為低阻抗",
-        "B": "CCA為高阻抗，ECA與ICA為低阻抗",
-        "C": "CCA為低阻抗，ECA與ICA為高阻抗",
-        "D": "CCA與ICA為低阻抗，ECA為高阻抗"
-      },
-      "page": 11,
-      "answer": "A"
-    },
-    {
-      "id": "110-1-66",
-      "text": "附圖為橫向膀胱彩色都卜勒超音波掃描，箭號所指為何？",
-      "options": {
-        "A": "twinkling artifact",
-        "B": "edge artifact",
-        "C": "flash artifact",
-        "D": "jet phenomenon"
-      },
-      "page": 11,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q110-1-66_p12_i1.png"
-    },
-    {
-      "id": "110-1-71",
-      "text": "超音波檢查時，正常成人餘尿應該在多少毫升以下，超過時即應考慮為不正常？",
-      "options": {
-        "A": "200",
-        "B": "150",
-        "C": "100",
-        "D": "50"
-      },
-      "page": 13,
-      "answer": "A"
+      "image": "特殊攝影期末101-115/images/q110-1-43_p7_i1.png"
     },
     {
       "id": "109-2-15",
@@ -3403,69 +1523,6 @@
       },
       "page": 5,
       "answer": "A"
-    },
-    {
-      "id": "109-2-49",
-      "text": "相對於2D-TOF MRA，有關3D-TOF MRA的敘述，下列何者錯誤？",
-      "options": {
-        "A": "對slow flow之偵測較靈敏",
-        "B": "訊雜比較高",
-        "C": "成像時間較久",
-        "D": "空間解析度較佳"
-      },
-      "page": 8,
-      "answer": "A"
-    },
-    {
-      "id": "109-2-50",
-      "text": "腦部的動靜脈畸形在T1-weighted image上可能呈現下列何種血流現象？①flow related enhancement ②flow void",
-      "options": {
-        "A": "只有①會出現",
-        "B": "只有②會出現",
-        "C": "①、②皆有",
-        "D": "①、②皆無"
-      },
-      "page": 8,
-      "answer": "C"
-    },
-    {
-      "id": "109-2-66",
-      "text": "腹部超音波掃描，附圖中箭號所示最可能為何？",
-      "options": {
-        "A": "hypertrophic column of Bertin",
-        "B": "hamartoma",
-        "C": "renal stone",
-        "D": "fetal lobulation"
-      },
-      "page": 11,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q109-2-66_p12_i1.png"
-    },
-    {
-      "id": "109-2-67",
-      "text": "附圖為下腹部超音波掃描，影像中箭號所指為何？",
-      "options": {
-        "A": "膀胱癌",
-        "B": "結石",
-        "C": "血塊",
-        "D": "導管"
-      },
-      "page": 12,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q109-2-67_p12_i2.png"
-    },
-    {
-      "id": "109-2-68",
-      "text": "附圖為膀胱都卜勒超音波掃描，箭號所指最可能為何？",
-      "options": {
-        "A": "尿管氣球",
-        "B": "膀胱腫瘤",
-        "C": "偽動脈瘤",
-        "D": "尿液流動造成"
-      },
-      "page": 12,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q109-2-68_p12_i3.png"
     },
     {
       "id": "109-1-12",
@@ -3610,55 +1667,6 @@
       },
       "page": 5,
       "answer": "A"
-    },
-    {
-      "id": "109-1-30",
-      "text": "急性自發性蛛網膜下腔出血時，緊急做電腦斷層腦部血管造影(brain CT angiography)常見之目的為何？",
-      "options": {
-        "A": "尋找腦靜脈出血點",
-        "B": "尋找破裂的腦動脈瘤",
-        "C": "評估腦動脈阻塞狀況",
-        "D": "評估腦血管痙攣狀況"
-      },
-      "page": 5,
-      "answer": "D"
-    },
-    {
-      "id": "109-1-49",
-      "text": "要測量血管中的血流速度，可使用下列何種MRA？",
-      "options": {
-        "A": "2D PC(phase contrast)",
-        "B": "3D TOF(time-of-flight)",
-        "C": "2D TOF(time-of-flight)",
-        "D": "contrast-enhanced"
-      },
-      "page": 8,
-      "answer": "A"
-    },
-    {
-      "id": "109-1-55",
-      "text": "下列何種造影技術可以不使用造影劑就能得到血管的影像？",
-      "options": {
-        "A": "CTA",
-        "B": "TOF-MRA",
-        "C": "DSA",
-        "D": "conventional angiography"
-      },
-      "page": 9,
-      "answer": "A"
-    },
-    {
-      "id": "109-1-67",
-      "text": "下圖45歲左腰痛男性病患膀胱之超音波影像中箭號所指為何？",
-      "options": {
-        "A": "附近腸氣假影",
-        "B": "輸尿管結石",
-        "C": "膀胱結石",
-        "D": "攝護腺結石"
-      },
-      "page": 12,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q109-1-67_p12_i3.png"
     },
     {
       "id": "108-2-11",
@@ -3865,54 +1873,29 @@
       "answer": "B"
     },
     {
-      "id": "108-2-63",
-      "text": "腎臟超音波掃描呈現高回音病灶，最可能的診斷為何？",
+      "id": "108-2-30",
+      "text": "如圖箭號所指，診斷為何？",
       "options": {
-        "A": "淋巴瘤(lymphoma)",
-        "B": "水腎(hydronephrosis)",
-        "C": "血管肌脂肪瘤(angiomyolipoma)",
-        "D": "囊腫(cyst)"
+        "A": "腦腫瘤",
+        "B": "蛛網膜下腔出血",
+        "C": "硬膜外腔出血",
+        "D": "硬膜下腔出血"
       },
-      "page": 10,
+      "page": 5,
+      "answer": "D",
+      "image": "特殊攝影期末101-115/images/q108-2-30_p5_i1.png"
+    },
+    {
+      "id": "108-1-7",
+      "text": "有關脊椎攝影swimmer's lateral projection的敘述，下列何者錯誤？",
+      "options": {
+        "A": "⽤來呈現被肩部擋住的下頸椎",
+        "B": "檢查者靠X光球管的⼿臂儘量往下，靠X光接收器的⼿臂舉起貼近頭部，儘量往上伸",
+        "C": "要確定C7、T1脊椎能夠清晰呈現",
+        "D": "檢查者必須側躺"
+      },
+      "page": 2,
       "answer": "C"
-    },
-    {
-      "id": "108-2-66",
-      "text": "附圖中腎臟凸出之處(箭號所指)為下列何者？",
-      "options": {
-        "A": "column of Bertin",
-        "B": "junctional parenchymal defect",
-        "C": "dromedary hump",
-        "D": "renal infarct"
-      },
-      "page": 11,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q108-2-66_p11_i2.png"
-    },
-    {
-      "id": "108-2-67",
-      "text": "下列有關膀胱的超音波掃描，何者錯誤？",
-      "options": {
-        "A": "一般於恥骨上緣，做橫向及縱向掃描",
-        "B": "掃描前病人應喝適量的水，以使膀胱脹大",
-        "C": "排尿後膀胱有餘尿，必定有病理問題",
-        "D": "膀胱之尿容量約等於前後、上下及左右三個徑的乘積再除以2"
-      },
-      "page": 11,
-      "answer": "C"
-    },
-    {
-      "id": "108-2-68",
-      "text": "附圖為陰囊突然劇痛10歲男孩之陰囊都卜勒超音波掃描，最可能的診斷為何？",
-      "options": {
-        "A": "左側睪丸腫瘤",
-        "B": "右側睪丸腫瘤",
-        "C": "左側睪丸扭轉",
-        "D": "右側睪丸扭轉"
-      },
-      "page": 11,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q108-2-68_p12_i1.png"
     },
     {
       "id": "108-1-13",
@@ -4072,56 +2055,6 @@
       "answer": "C"
     },
     {
-      "id": "108-1-68",
-      "text": "下列有關下泌尿道超⾳波掃描之敘述，何者錯誤？",
-      "options": {
-        "A": "若病⼈插有導尿管，須將導尿管綁住，使膀胱漲⼤",
-        "B": "若膀胱壁呈現瀰漫性增厚，其最可能的原因為移⾏細胞癌",
-        "C": "當懷疑膀胱底有沈積物時，須改變姿勢，以分辨腫瘤或其他病灶",
-        "D": "當膀胱漲時，正常壁厚通常不超過3～4 mm，塌陷時則壁會增厚，但亦不會超過5～8 mm"
-      },
-      "page": 12,
-      "answer": "C"
-    },
-    {
-      "id": "108-1-69",
-      "text": "48歲男性病⼈主訴左腹股溝脹痛，超⾳波掃描如附圖，最可能診斷為下列何者？",
-      "options": {
-        "A": "睪丸癌",
-        "B": "精索靜脈曲張",
-        "C": "囊腫",
-        "D": "副睪炎"
-      },
-      "page": 12,
-      "answer": "A",
-      "image": "特殊攝影期末101-115/images/q108-1-69_p12_i2.png"
-    },
-    {
-      "id": "108-1-72",
-      "text": "超⾳波掃描如附圖，箭號所指為何？",
-      "options": {
-        "A": "腎錐體",
-        "B": "腎⽪質",
-        "C": "腎盂⽔腫",
-        "D": "腎內出⾎"
-      },
-      "page": 13,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q108-1-72_p13_i2.png"
-    },
-    {
-      "id": "107-2-2",
-      "text": "下列各項解剖標記(landmarks)，由上至下的排列順序，何者正確？",
-      "options": {
-        "A": "greater trochanter→iliac crest→inferior costal margin→ASIS→xiphoid tip",
-        "B": "xiphoid tip→greater trochanter→iliac crest→inferior costal margin→ASIS",
-        "C": "xiphoid tip→inferior costal margin→iliac crest→ASIS→greater trochanter",
-        "D": "xiphoid tip→greater trochanter→ASIS→iliac crest→inferior costal margin"
-      },
-      "page": 1,
-      "answer": "C"
-    },
-    {
       "id": "107-2-13",
       "text": "對大多數血管的診斷或介入治療而言，最常進行血管穿刺部位是：",
       "options": {
@@ -4216,81 +2149,6 @@
       },
       "page": 5,
       "answer": "A"
-    },
-    {
-      "id": "107-2-37",
-      "text": "下圖為重組後腹部電腦斷層影像，白色箭號所指的為下列那一項？",
-      "options": {
-        "A": "Horse-shoe kidneys",
-        "B": "Duplication of renal pelvis and ureter",
-        "C": "Entero-ureteral fistula",
-        "D": "Ectopic kidney"
-      },
-      "page": 7,
-      "answer": "B"
-    },
-    {
-      "id": "107-2-40",
-      "text": "下列何種腎臟疾病在CT影像最常出現脂肪密度？",
-      "options": {
-        "A": "angiomyolipoma",
-        "B": "hematoma",
-        "C": "polycystic kidney",
-        "D": "horseshoe kidney"
-      },
-      "page": 8,
-      "answer": "A"
-    },
-    {
-      "id": "107-2-63",
-      "text": "右側陰囊掃描如下圖，黃色箭號所指為何？",
-      "options": {
-        "A": "睪丸",
-        "B": "副睪丸",
-        "C": "睪丸腫瘤",
-        "D": "副睪膿瘍"
-      },
-      "page": 13,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q107-2-63_p13_i2.png"
-    },
-    {
-      "id": "107-2-64",
-      "text": "下圖為頸動脈之彩色都卜勒超音波，箭號所指可能為何？",
-      "options": {
-        "A": "正常且適當之參數設定",
-        "B": "彩色都卜勒之aliasing假影",
-        "C": "彩色都卜勒之side lobe假影",
-        "D": "彩色都卜勒之clutter假影"
-      },
-      "page": 14,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q107-2-64_p14_i1.png"
-    },
-    {
-      "id": "107-2-71",
-      "text": "在超音波掃描中，下列那一項為最高回音性？",
-      "options": {
-        "A": "腎盂擴張",
-        "B": "腎盂旁囊腫",
-        "C": "腎靜脈擴張",
-        "D": "血管平滑肌脂肪瘤"
-      },
-      "page": 15,
-      "answer": "D"
-    },
-    {
-      "id": "107-2-72",
-      "text": "骨盆腔超音波掃描如下圖，箭號所指為何？",
-      "options": {
-        "A": "膀胱",
-        "B": "攝護腺",
-        "C": "儲精囊",
-        "D": "直腸"
-      },
-      "page": 15,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q107-2-72_p15_i2.png"
     },
     {
       "id": "107-1-8",
@@ -4450,57 +2308,6 @@
       "answer": "C"
     },
     {
-      "id": "107-1-64",
-      "text": "下圖為頸動脈之都卜勒頻譜，箭號所指為何？",
-      "options": {
-        "A": "乾淨音窗(window)代表速率一致",
-        "B": "wall filter太高",
-        "C": "aliasing effect",
-        "D": "twinkling effect"
-      },
-      "page": 12,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q107-1-64_p12_i2.png"
-    },
-    {
-      "id": "107-1-72",
-      "text": "10歲男孩突然陰囊劇痛，睪丸彩色超音波掃描如下圖，其診斷最可能為下列何者？",
-      "options": {
-        "A": "兩側均正常",
-        "B": "左側睪丸扭轉",
-        "C": "右側睪丸扭轉",
-        "D": "兩側睪丸扭轉"
-      },
-      "page": 14,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q107-1-72_p14_i2.png"
-    },
-    {
-      "id": "107-1-79",
-      "text": "下圖箭號所指最可能的解剖部位為何？",
-      "options": {
-        "A": "肺動脈 (pulmonary artery)",
-        "B": "肺靜脈(pulmonary vein)",
-        "C": "升主動脈 (ascending aorta)",
-        "D": "上腔靜脈(superior vena cava)"
-      },
-      "page": 15,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q107-1-79_p16_i1.png"
-    },
-    {
-      "id": "107-1-80",
-      "text": "承上題附圖，箭號所指最可能之診斷為何？",
-      "options": {
-        "A": "主動脈剝離(aortic dissection)",
-        "B": "壁內血栓(intramural thrombus)",
-        "C": "主動脈硬化性潰瘍(penetrating artherosclerotic ulcer)",
-        "D": "上腔靜脈症候群(superior vena cava syndrome)"
-      },
-      "page": 16,
-      "answer": "A"
-    },
-    {
       "id": "106-2-13",
       "text": "下列關於DSA(digital subtraction angiography)的敘述，那些正確？①遮罩模式(mask mode)比時間差模 式(time-interval difference mode)更易產生對位失準假影(misregistration artifact) ②遮罩模式與時間差 模式同時使用，則稱為混合減贅(hybrid subtraction) ③能量減贅(energy subtraction)是使用二種不同 能量的X光來產生影像，而後相減",
       "options": {
@@ -4609,80 +2416,6 @@
       "answer": "B"
     },
     {
-      "id": "106-2-26",
-      "text": "成人進行腦部電腦斷層血管攝影，如沒有使用特別方法追蹤對比劑時，在注射對比劑後約多少時間開始攝影 最佳？",
-      "options": {
-        "A": "60～90秒",
-        "B": "30～50秒",
-        "C": "15～20秒",
-        "D": "0～5秒"
-      },
-      "page": 4,
-      "answer": "C"
-    },
-    {
-      "id": "106-2-40",
-      "text": "下列何者為磁振血管造影(MRA)最常用的成像波序？",
-      "options": {
-        "A": "spin echo",
-        "B": "STIR",
-        "C": "gradient echo",
-        "D": "FLAIR"
-      },
-      "page": 8,
-      "answer": "C"
-    },
-    {
-      "id": "106-2-46",
-      "text": "下圖為腦部MRA，箭號所指為何？",
-      "options": {
-        "A": "前腦動脈",
-        "B": "中腦動脈",
-        "C": "後腦動脈",
-        "D": "內頸動脈"
-      },
-      "page": 9,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q106-2-46_p9_i2.png"
-    },
-    {
-      "id": "106-2-47",
-      "text": "有關對比增強磁振血管造影術(contrast-enhanced MR angiography)的敘述，下列何者正確？",
-      "options": {
-        "A": "其取像平面通常是與血管走向呈90度",
-        "B": "是一種T2加權影像技術",
-        "C": "與相位對比磁振血管造影術(phase-contrast MR angiography)相比，一般而言，其訊雜比(SNR)比較 差",
-        "D": "與疾行時間磁振血管造影術(time-of-flight MR angiography)相比，比較不受擾流(turbulent flow)引起的 去相效應(dephasing effect)的影響"
-      },
-      "page": 9,
-      "answer": "D"
-    },
-    {
-      "id": "106-2-59",
-      "text": "關於陰囊和睪丸的超音波檢查，下列敘述何者正確？",
-      "options": {
-        "A": "睪丸一般呈圓形或橢圓形、均質的低回音",
-        "B": "正常的副睪其回音較睪丸低",
-        "C": "陰囊內的水囊(hydrocele)其超音波呈現為圍繞睪丸的高回音區",
-        "D": "一般可選用7.5 MHz扇型探頭來掃描睪丸"
-      },
-      "page": 12,
-      "answer": "D"
-    },
-    {
-      "id": "106-2-61",
-      "text": "下圖為移植腎之彩色都卜勒超音波圖，下方黃色箭頭所指之頻譜為何？",
-      "options": {
-        "A": "mirror image artifact",
-        "B": "aliasing artifact",
-        "C": "正常之腎葉間靜脈(interlobar vein)",
-        "D": "正常之腎節動脈(segmental artery)"
-      },
-      "page": 13,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q106-2-61_p13_i2.png"
-    },
-    {
       "id": "106-2-77",
       "text": "下圖中箭號所顯示為那一條血管出血？",
       "options": {
@@ -4731,18 +2464,6 @@
       },
       "page": 1,
       "answer": "A"
-    },
-    {
-      "id": "106-1-12",
-      "text": "下列何種非侵襲性攝影方式最適合用於呈現心臟冠狀動脈的狹窄狀況？",
-      "options": {
-        "A": "傳統放射攝影",
-        "B": "數位放射攝影",
-        "C": "電腦斷層攝影",
-        "D": "SPECT"
-      },
-      "page": 2,
-      "answer": "B"
     },
     {
       "id": "106-1-13",
@@ -4865,53 +2586,29 @@
       "answer": "C"
     },
     {
-      "id": "106-1-61",
-      "text": "下列有關腎臟超音波影像的敘述，何者並非正常成人的腎臟應符合的標準？",
+      "id": "106-1-33",
+      "text": "下列那一項是診斷急性主動脈剝離症的最佳檢查方法？",
       "options": {
-        "A": "腎長度(renal length)：10～12 cm",
-        "B": "腎寬度(renal width)：8～10 cm",
-        "C": "腎皮質回音較腎竇低",
-        "D": "會因呼吸位移3～7 cm"
+        "A": "高解析度電腦斷層攝影(HRCT)",
+        "B": "電腦斷層血管攝影",
+        "C": "低劑量肺部電腦斷層攝影",
+        "D": "肺部通氣-灌注攝影"
       },
-      "page": 8,
-      "answer": "C"
+      "page": 4,
+      "answer": "B"
     },
     {
-      "id": "106-1-65",
-      "text": "超音波檢查中，測量排尿後膀胱內的餘尿，一般使用的公式為：膀胱的左右徑×上下徑×前後徑×常數。該「常數」應為下列何 者？",
+      "id": "106-1-79",
+      "text": "下圖為56歲女性之電腦斷層影像，平時有高血壓，突然發生半身無力，意識障礙，則最正確的診斷為下列何者？",
       "options": {
-        "A": "0.7",
-        "B": "0.5",
-        "C": "0.3",
-        "D": "1.0"
+        "A": "基底核出血性中風(basal ganglion hemorrhage)",
+        "B": "蜘蛛網膜下腔出血性中風(subarachnoid hemorrhage，SAH)",
+        "C": "梗塞性中風(brain infarction)",
+        "D": "腦瘤出血(tumor bleeding)"
       },
-      "page": 10,
-      "answer": "C"
-    },
-    {
-      "id": "106-1-71",
-      "text": "下圖為超音波影像，箭號所指處最可能為下列何者？",
-      "options": {
-        "A": "結石(stone)",
-        "B": "血管平滑肌脂肪瘤(angiomyolipoma)",
-        "C": "水囊(cyst)",
-        "D": "過渡細胞癌(transitional cell carcinoma)"
-      },
-      "page": 11,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q106-1-71_p11_i1.png"
-    },
-    {
-      "id": "106-1-72",
-      "text": "下列有關IVC超音波掃描的敘述，何者錯誤？",
-      "options": {
-        "A": "外型比腹主動脈較易變形",
-        "B": "可用能量都卜勒(power Doppler)超音波掃描偵測血流方向",
-        "C": "可用都卜勒超音波掃描偵測血栓",
-        "D": "可用灰階超音波掃描偵測血栓"
-      },
-      "page": 11,
-      "answer": "C"
+      "page": 12,
+      "answer": "C",
+      "image": "特殊攝影期末101-115/images/q106-1-79_p12_i1.png"
     },
     {
       "id": "106-1-80",
@@ -4924,18 +2621,6 @@
       },
       "page": 12,
       "answer": "A"
-    },
-    {
-      "id": "105-2-9",
-      "text": "下列何者不是門靜脈的上游枝？",
-      "options": {
-        "A": "脾靜脈",
-        "B": "上腸繫膜靜脈",
-        "C": "下腸繫膜靜脈",
-        "D": "腎靜脈"
-      },
-      "page": 1,
-      "answer": "D"
     },
     {
       "id": "105-2-13",
@@ -5071,29 +2756,16 @@
       "image": "特殊攝影期末101-115/images/q105-2-38_p5_i2.png"
     },
     {
-      "id": "105-2-45",
-      "text": "下圖為頸椎MRI影像，箭號所指最可能為何？",
+      "id": "105-1-11",
+      "text": "當頸椎側位攝影(lateral projection)無法診斷第七頸椎(C7)時，須改以下列何種方法攝 影？",
       "options": {
-        "A": "骨刺(bony spur)",
-        "B": "面關節(facet joint)退化性病變",
-        "C": "椎間盤突出(herniation of intervertebral disc)",
-        "D": "脊椎腫瘤(spinal tumor)"
+        "A": "過度彎曲(hyperflexion)",
+        "B": "過度伸展(hyperextension)",
+        "C": "側位游泳者姿勢(swimmer's lateral position)",
+        "D": "側位並配合水平方向Ｘ光(lateral position，horizontal beam)"
       },
-      "page": 7,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q105-2-45_p7_i2.png"
-    },
-    {
-      "id": "105-2-51",
-      "text": "下列何者不是MRI的血管攝影技術?",
-      "options": {
-        "A": "diffusion tensor imaging",
-        "B": "time of flight",
-        "C": "phase contrast",
-        "D": "contrast enhanced"
-      },
-      "page": 9,
-      "answer": "A"
+      "page": 2,
+      "answer": "D"
     },
     {
       "id": "105-1-13",
@@ -5204,81 +2876,6 @@
       "answer": "C"
     },
     {
-      "id": "105-1-36",
-      "text": "下圖為一29歲無症狀女性的電腦斷層腹部掃描，您的診斷為：",
-      "options": {
-        "A": "異位腎(ectopic kidney)",
-        "B": "後腹腔腫瘤",
-        "C": "馬蹄腎",
-        "D": "腎細胞癌"
-      },
-      "page": 5,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q105-1-36_p5_i2.png"
-    },
-    {
-      "id": "105-1-64",
-      "text": "下圖為一體檢病人超音波檢查之左腎長軸切面圖，箭號所指最可能為何？",
-      "options": {
-        "A": "腎細胞癌(renal cell carcinoma)",
-        "B": "囊腫(cyst)",
-        "C": "肥厚之腎柱 (hypertrophic column of Bertini)",
-        "D": "腎水腫(hydronephrosis)"
-      },
-      "page": 10,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q105-1-64_p10_i2.png"
-    },
-    {
-      "id": "105-1-65",
-      "text": "水腎病人之超音波影像中，通常可見到下列何種徵象？",
-      "options": {
-        "A": "多發性的囊狀結構位於腎竇部，囊腫互不交通",
-        "B": "腎竇部的囊狀結構呈多發性，且有鈣化",
-        "C": "合併腎盞擴張或輸尿管擴張",
-        "D": "囊狀構造之內出現隔膜"
-      },
-      "page": 10,
-      "answer": "B"
-    },
-    {
-      "id": "105-1-70",
-      "text": "下圖腹部超音波影像，箭號所示最可能為何？",
-      "options": {
-        "A": "惡性腫瘤",
-        "B": "腎囊腫",
-        "C": "腎產氣性膿瘍",
-        "D": "腎水腫"
-      },
-      "page": 11,
-      "answer": "C",
-      "image": "特殊攝影期末101-115/images/q105-1-70_p11_i1.png"
-    },
-    {
-      "id": "105-1-71",
-      "text": "下列關於成人泌尿系統超音波掃描的敘述，何者錯誤？",
-      "options": {
-        "A": "正常腎臟的長度約為9～12公分",
-        "B": "正常腎臟之腎竇會呈現低回音",
-        "C": "正常的輸尿管在超音波下不易呈現",
-        "D": "正常腎皮質回音較肝臟低但是比腎錐體的回音高"
-      },
-      "page": 11,
-      "answer": "D"
-    },
-    {
-      "id": "105-1-80",
-      "text": "圖中影像使用的CT成像方式為何？",
-      "options": {
-        "A": "無對比劑的CT(non-enhanced CT)",
-        "B": "注射對比劑的CT(contrast-enhanced CT)",
-        "C": "動態增強顯影CT(dynamic contrast-enhanced CT)",
-        "D": "電腦斷層血管造影(CT angiography)"
-      },
-      "page": 12,
-      "answer": "A"
-    },
-    {
       "id": "104-2-3",
       "text": "Swimmer's lateral position應用於檢查那一個部位？",
       "options": {
@@ -5289,18 +2886,6 @@
       },
       "page": 1,
       "answer": "D"
-    },
-    {
-      "id": "104-2-7",
-      "text": "在頭部X光素片攝影中Schuller method是用來進行那個部位的檢查？",
-      "options": {
-        "A": "optic foramina",
-        "B": "TM joint",
-        "C": "mastoid",
-        "D": "nasal bone"
-      },
-      "page": 1,
-      "answer": "答B、C給分"
     },
     {
       "id": "104-2-13",
@@ -5399,18 +2984,6 @@
       "answer": "C"
     },
     {
-      "id": "104-2-24",
-      "text": "正常情況下，下列那一條血管不是直接源自動脈弓？",
-      "options": {
-        "A": "右鎖骨下動脈(right subclavian artery)",
-        "B": "頭臂動脈(brachiocephalic artery)",
-        "C": "左總頸動脈(left common carotid artery)",
-        "D": "左鎖骨下動脈(left subclavian artery)"
-      },
-      "page": 2,
-      "answer": "A"
-    },
-    {
       "id": "104-2-25",
       "text": "若懷疑患者有骨盆腔骨折合併尿道撕裂傷，最適合用下列那一種檢查？",
       "options": {
@@ -5433,104 +3006,6 @@
       },
       "page": 3,
       "answer": "A"
-    },
-    {
-      "id": "104-2-27",
-      "text": "腎囊腫之硬化療法(sclerotherapy)最常用的硬化劑為下列何者？",
-      "options": {
-        "A": "鋇劑",
-        "B": "等張含碘造影劑",
-        "C": "純酒精",
-        "D": "空氣"
-      },
-      "page": 3,
-      "answer": "C"
-    },
-    {
-      "id": "104-2-36",
-      "text": "接受心臟冠狀動脈的MSCT血管攝影時，下列敘述何者最正確？",
-      "options": {
-        "A": "接受過冠狀動脈繞道手術的病患，其掃描範圍仍與一般人相同",
-        "B": "由於金屬支架會造成明顯的假影，已放置冠狀動脈支架的病人為此項檢查的禁忌",
-        "C": "因掃描時間短，病人不需刻意閉住呼吸",
-        "D": "心律不整的病人接受此項檢查會降低影像品質"
-      },
-      "page": 4,
-      "answer": "D"
-    },
-    {
-      "id": "104-2-49",
-      "text": "下列那一項最適合用於檢查顱內之靜脈流速異常？",
-      "options": {
-        "A": "phase contrast MRA",
-        "B": "fat saturation",
-        "C": "T1 weighted image",
-        "D": "time-of-flight MRA"
-      },
-      "page": 5,
-      "answer": "A"
-    },
-    {
-      "id": "104-2-56",
-      "text": "腦部MRI檢查時，顱底血管出現下圖中箭號所指之高訊號，最可能的原因為何？",
-      "options": {
-        "A": "截斷假影(truncation artifact)",
-        "B": "反褶假影(aliasing artifact)",
-        "C": "串擾假影(cross-talk artifact)",
-        "D": "流動相關增強作用(flow related enhancement)"
-      },
-      "page": 6,
-      "answer": "D",
-      "image": "特殊攝影期末101-115/images/q104-2-56_p7_i1.png"
-    },
-    {
-      "id": "104-2-69",
-      "text": "下列有關腎囊腫超音波檢查之敘述，何者錯誤？",
-      "options": {
-        "A": "若位於腎竇內，須與腎水腫作鑑別",
-        "B": "一般為均勻無回音性",
-        "C": "腎囊腫內若含結節或粗的間隔(septum)，必定為良性",
-        "D": "腎囊腫後面常有回音加強現象(distal acoustic enhancement)"
-      },
-      "page": 8,
-      "answer": "C"
-    },
-    {
-      "id": "104-2-78",
-      "text": "有一80歲男性病人，其膀胱超音波影像如下圖(一)、(二)，請依此回答下列三題： 1.在下圖(一)中，膀胱灰階圖中箭號所指為何？",
-      "options": {
-        "A": "膀胱血塊",
-        "B": "膀胱結石",
-        "C": "膀胱壁囊腫",
-        "D": "導尿管之氣囊"
-      },
-      "page": 9,
-      "answer": "B",
-      "image": "特殊攝影期末101-115/images/q104-2-78_p9_i2.png"
-    },
-    {
-      "id": "104-2-79",
-      "text": "在圖(二)中，膀胱彩色超音波之箭號所指為何？",
-      "options": {
-        "A": "閃爍假影(twinkling artifact)",
-        "B": "鏡像假影(mirror artifact)",
-        "C": "折射假影(refraction shadow)",
-        "D": "彗尾假影(comet tail artifact)"
-      },
-      "page": 9,
-      "answer": "A"
-    },
-    {
-      "id": "104-2-80",
-      "text": "在圖(一)中，灰階超音波圖中箭頭所指為何？",
-      "options": {
-        "A": "彗尾假影(comet tail artifact)",
-        "B": "音波陰影(acoustic shadow)",
-        "C": "折射假影(refraction shadow)",
-        "D": "鬼影假影(ghost artifact)"
-      },
-      "page": 9,
-      "answer": "B"
     },
     {
       "id": "104-1-13",
@@ -5725,6 +3200,18 @@
       "answer": "C"
     },
     {
+      "id": "103-2-18",
+      "text": "下列何者是胰管撕裂傷的最理想影像診斷工具？",
+      "options": {
+        "A": "MRCP",
+        "B": "MDCT",
+        "C": "ERCP",
+        "D": "PTC"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
       "id": "103-2-20",
       "text": "進行T-tube膽道檢查的禁忌症為何？",
       "options": {
@@ -5771,18 +3258,6 @@
       },
       "page": 3,
       "answer": "A"
-    },
-    {
-      "id": "103-2-27",
-      "text": "在淋巴攝影(lymphography)時，為顯示淋巴結之影像，約在打對比劑後多少時間照相？",
-      "options": {
-        "A": "1小時",
-        "B": "12小時",
-        "C": "24小時",
-        "D": "48小時"
-      },
-      "page": 3,
-      "answer": "C"
     },
     {
       "id": "103-2-28",
@@ -5857,6 +3332,693 @@
       "page": 12,
       "answer": "C",
       "image": "特殊攝影期末101-115/images/q103-2-78_p12_i2.png"
+    },
+    {
+      "id": "103-1-9",
+      "text": "下列何種穿刺引流術最可以紓緩急性膽囊炎的症狀？",
+      "options": {
+        "A": "PTBD(percutaneous transhepatic biliary drainage)",
+        "B": "ENBD(endoscopic nasal biliary drainage)",
+        "C": "PTGBD (percutaneous transhepatic GB drainage)",
+        "D": "PAOD(peripheral arterial occlusive disease)"
+      },
+      "page": 1,
+      "answer": "C"
+    },
+    {
+      "id": "103-1-10",
+      "text": "常見的替代性右肝動脈(replaced right hepatic artery)正常變異，最常源自於下列那一條血管？",
+      "options": {
+        "A": "主動脈",
+        "B": "腹腔動脈",
+        "C": "上腸系(繫)膜動脈",
+        "D": "下腸系(繫)膜動脈"
+      },
+      "page": 1,
+      "answer": "A"
+    },
+    {
+      "id": "103-1-11",
+      "text": "下列關於泌尿系統檢查之敘述何者正確？",
+      "options": {
+        "A": "IVU的病人應進 行骨盆處束縛以利對比劑滯留於上輸尿管",
+        "B": "VCUG可作為評 估尿失禁或尿道創傷之檢查",
+        "C": "男性逆行性尿道攝影時宜採 RAO 30度",
+        "D": "Retrograde pyelography(RP)不是侵襲性檢查"
+      },
+      "page": 1,
+      "answer": "B"
+    },
+    {
+      "id": "103-1-15",
+      "text": "通常放置inferior vena cava filter時，filter應放置於何處？",
+      "options": {
+        "A": "inferior to the renal vein",
+        "B": "superior to the renal vein",
+        "C": "inferior to right hepatic vein",
+        "D": "superior to right hepatic vein"
+      },
+      "page": 2,
+      "answer": "B"
+    },
+    {
+      "id": "103-1-16",
+      "text": "下列何者為腎臟栓塞術(renal embolization)最常見之適應症？",
+      "options": {
+        "A": "renal cell carcinoma",
+        "B": "renal oncocytoma",
+        "C": "renal injuries",
+        "D": "renal angiomyolipoma"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "103-1-17",
+      "text": "在血管攝影後，對凝血功能正常之病人，應壓迫puncture site，而且病人至少應臥床幾小時？",
+      "options": {
+        "A": "1",
+        "B": "4",
+        "C": "12",
+        "D": "24"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
+      "id": "103-1-18",
+      "text": "膀胱攝影(cystography)患者採仰臥姿勢，為使膀胱底與恥骨聯合分開，攝影時X光管之投射方 向應採：",
+      "options": {
+        "A": "垂直檢查台",
+        "B": "向頭10～15度",
+        "C": "向脚10～15度",
+        "D": "平行檢查台"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
+      "id": "103-1-20",
+      "text": "Pantomography(panorex)的主要目的在於呈現：",
+      "options": {
+        "A": "teeth及mandible",
+        "B": "nasal cavity及maxillary sinuses",
+        "C": "external acoustic canals及mastoids",
+        "D": "orbits及ethmoid sinuses"
+      },
+      "page": 2,
+      "answer": "D"
+    },
+    {
+      "id": "103-1-21",
+      "text": "施行hysterosalpingography(HSG)，病患已置入導管進行注射對比劑時，病人宜採何體位？",
+      "options": {
+        "A": "lithotomy position",
+        "B": "Sims' position",
+        "C": "Trendelenburg position",
+        "D": "prone position"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
+      "id": "102-2-15",
+      "text": "下列何者為傳統血管介入性診療術？",
+      "options": {
+        "A": "栓塞術(embolization)",
+        "B": "經皮穿腎引流術(percutaneous nephrostomy)",
+        "C": "腸道支架置放術(enteric stenting)",
+        "D": "經皮脊椎成形術(percutaneous vertebroplasty)"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "102-2-16",
+      "text": "病患進行腦部傳統血管攝影後，下列何者是最需要注意的事項？",
+      "options": {
+        "A": "絕對臥床休息4～6小時",
+        "B": "保持穿刺部位彎曲6小時",
+        "C": "24小時內只能進食液體食物",
+        "D": "6小時內進行腦部CT檢查"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "102-2-17",
+      "text": "下列何者為數位透視攝影(digital radiography-fluoroscopy)優於傳統透視攝影(conventional film-screen fluoroscopy)之處？",
+      "options": {
+        "A": "需要使用片匣(cassettes)",
+        "B": "只有一種成像格式(frame format)",
+        "C": "病人之輻射曝露量較低",
+        "D": "不能用連續放映模式(cine-mode)"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
+      "id": "102-2-22",
+      "text": "Synovial joints and related soft tissue structures的對比劑檢查是指：",
+      "options": {
+        "A": "血管攝影(angiography)",
+        "B": "關節攝影(arthrography)",
+        "C": "脊髓攝影(myelography)",
+        "D": "腦池攝影(cisternography)"
+      },
+      "page": 3,
+      "answer": "B"
+    },
+    {
+      "id": "102-2-23",
+      "text": "輸尿管有三處生理性狹窄，下列何者不包括在內？",
+      "options": {
+        "A": "輸尿管和腎盂交接處",
+        "B": "輸尿管和腎動靜脈交接處",
+        "C": "輸尿管和髂骨動靜脈交接處",
+        "D": "輸尿管和膀胱交接處"
+      },
+      "page": 3,
+      "answer": "B"
+    },
+    {
+      "id": "102-2-24",
+      "text": "下列有關介入性血管成形術(angioplasty)的敘述，何者錯誤？",
+      "options": {
+        "A": "應注意預防血管破裂、穿孔、阻塞等可能之併發症",
+        "B": "需注意以氣球擴張血管腔時間的長短",
+        "C": "當血管成形術完成後，應即刻拔出導管，不應注射對比劑追蹤，以減少傷害",
+        "D": "血管成形術可應用於冠狀動脈、腎動脈或下肢動脈"
+      },
+      "page": 3,
+      "answer": "C"
+    },
+    {
+      "id": "102-2-25",
+      "text": "IVU使用下列何種對比劑？",
+      "options": {
+        "A": "鋇劑",
+        "B": "含碘對比劑",
+        "C": "空氣",
+        "D": "二氧化碳"
+      },
+      "page": 3,
+      "answer": "B"
+    },
+    {
+      "id": "102-2-37",
+      "text": "下列何者最不適合使用非離子性含碘對比劑？",
+      "options": {
+        "A": "血清肌酸酐( creatinine)值為 0.9 mg/dL",
+        "B": "年齡小於 5 歲",
+        "C": "多發性骨髓瘤",
+        "D": "年齡大於70歲"
+      },
+      "page": 5,
+      "answer": "C"
+    },
+    {
+      "id": "102-2-39",
+      "text": "如果希望藉由CT angiography來評估血管狹窄程度及血管壁鈣化情形，以做為施行血管擴張術或 置放支架(stent)的參考，則下列何者較不適宜？",
+      "options": {
+        "A": "maximum intensity projection(MIP)",
+        "B": "multiplanar reformation(MPR)",
+        "C": "shaded surface display(SSD)",
+        "D": "volume rendering(VR)"
+      },
+      "page": 5,
+      "answer": "C"
+    },
+    {
+      "id": "102-1-6",
+      "text": "一般進行腦部傳統血管攝影，病患禁食時間最少要有多少小時：",
+      "options": {
+        "A": "0",
+        "B": "1～2",
+        "C": "4～8",
+        "D": "10～14"
+      },
+      "page": 1,
+      "answer": "A"
+    },
+    {
+      "id": "102-1-7",
+      "text": "施行靜脈注射尿路攝影(intravenous urography)，尿路壓迫(ureteric compression)解開的時機，通常緊接在下列那個攝影時間之前？",
+      "options": {
+        "A": "1分鐘",
+        "B": "5分鐘",
+        "C": "15分鐘",
+        "D": "排尿後"
+      },
+      "page": 1,
+      "answer": "B"
+    },
+    {
+      "id": "102-1-12",
+      "text": "下列關於經皮穿肝膽道引流術(PTCD)的敘述，何者最不正確？",
+      "options": {
+        "A": "術前需先評估病人影像資料，以確定最佳穿刺引流途徑和體位",
+        "B": "術前可給予鎮靜劑",
+        "C": "可用於總膽管癌或胰頭癌造成的膽道阻塞",
+        "D": "急性膽管炎病患不可接受PTCD"
+      },
+      "page": 1,
+      "answer": "C"
+    },
+    {
+      "id": "102-1-13",
+      "text": "下列何項屬於永久性的栓塞物？",
+      "options": {
+        "A": "gelfoam",
+        "B": "air",
+        "C": "blood clot",
+        "D": "coil"
+      },
+      "page": 1,
+      "answer": "D"
+    },
+    {
+      "id": "102-1-14",
+      "text": "在血管攝影術前，讓病人有充分之水份補給(well hydration)，可幫助病人降低下列何種風險？",
+      "options": {
+        "A": "吸入食物",
+        "B": "對比劑過敏",
+        "C": "腎功能損傷",
+        "D": "感染"
+      },
+      "page": 1,
+      "answer": "A"
+    },
+    {
+      "id": "102-1-15",
+      "text": "下列有關介入性影像學檢查之敘述，何者錯誤？",
+      "options": {
+        "A": "比傳統手術之侵犯性和風險性低",
+        "B": "比傳統手術所需之費用低",
+        "C": "可縮短病人之住院日數",
+        "D": "介入性影像檢查可取代所有手術"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "102-1-18",
+      "text": "下列關於關節攝影之敘述，何者錯誤？",
+      "options": {
+        "A": "關節攝影可應用於肩、膝、髖、腕等關節",
+        "B": "膝關節攝影主要用來評估關節囊、半月板及韌帶的破裂",
+        "C": "因為對比劑不直接注入血管，故該檢查仍適用於對碘劑過敏的病人",
+        "D": "實施關節攝影前，須與病人充分溝通，減少不安感"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
+      "id": "102-1-22",
+      "text": "下列何種影像偵測輸尿管結石最靈敏？",
+      "options": {
+        "A": "whole abdomen(含 pelvis)MRI with contrast",
+        "B": "whole abdomen(含 pelvis)MRI without contrast",
+        "C": "abdomen(含 pelvis)CT with contrast",
+        "D": "abdomen(含 pelvis)CT without contrast"
+      },
+      "page": 2,
+      "answer": "B"
+    },
+    {
+      "id": "102-1-27",
+      "text": "下圖中箭號所指示的位置為下列何者？",
+      "options": {
+        "A": "ascending aorta",
+        "B": "aortic arch",
+        "C": "descending aorta",
+        "D": "superior vena cava"
+      },
+      "page": 2,
+      "answer": "C",
+      "image": "特殊攝影期末101-115/images/q102-1-27_p3_i1.png"
+    },
+    {
+      "id": "101-2-2",
+      "text": "乳房攝影優於乳房超音波之處有那些？①分辨囊腫(cyst) ②區分微鈣化(microcalcification) ③分辨 實體病變(solid lesion) ④適合進行大規模篩檢",
+      "options": {
+        "A": "①②",
+        "B": "①④",
+        "C": "②③",
+        "D": "②④"
+      },
+      "page": 1,
+      "answer": "D"
+    },
+    {
+      "id": "101-2-10",
+      "text": "關於血管攝影檢查所使用的Seldinger technique，下列敘述何者最正確？",
+      "options": {
+        "A": "在透視攝影(fluoroscopy)下注射對比劑來尋找血管位置",
+        "B": "將導線送入血管內以便藉導線來引導導管(catheter)到正確位置",
+        "C": "送入導管或 sheath前不一定要移除套管(trocar)",
+        "D": "只用於動脈攝影"
+      },
+      "page": 1,
+      "answer": "B"
+    },
+    {
+      "id": "101-2-11",
+      "text": "在正常的前後位投射(AP projection)下肢動脈血管攝影中，經過脛骨(tibia)內側的動脈為：",
+      "options": {
+        "A": "後脛骨動脈(posterior tibial artery)",
+        "B": "前脛骨動脈(anterior tibial artery)",
+        "C": "腓動脈(peroneal artery)",
+        "D": "膕動脈(popliteal artery)"
+      },
+      "page": 1,
+      "answer": "A"
+    },
+    {
+      "id": "101-2-12",
+      "text": "胃十二指腸動脈通常源自於下列那一條血管？",
+      "options": {
+        "A": "右腎動脈",
+        "B": "肝總動脈",
+        "C": "下腸系(繫)膜動脈",
+        "D": "脾動脈"
+      },
+      "page": 2,
+      "answer": "B"
+    },
+    {
+      "id": "101-2-16",
+      "text": "在完成傳統脊髓攝影後，下列何者是最必須注意的事項？",
+      "options": {
+        "A": "小心預防抽搐的發生",
+        "B": "病人必須平躺2小時",
+        "C": "8小時內不可進食",
+        "D": "如發生頭痛，應立即做腦部血管攝影"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "101-2-17",
+      "text": "子宮動脈栓塞術(uterine artery embolization)，通常用於治療：",
+      "options": {
+        "A": "有症狀之子宮肌瘤",
+        "B": "有症狀之子宮頸癌",
+        "C": "有症狀之子宮內膜癌",
+        "D": "有症狀之子宮內膜異位症"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "101-2-19",
+      "text": "下列何種介入性檢查較不須在X光透視下操作？",
+      "options": {
+        "A": "椎體成形術(vertebroplasty)",
+        "B": "血管成形術(angioplasty)",
+        "C": "肝膿瘍引流",
+        "D": "下腔靜脈過濾器之置放"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
+      "id": "101-2-21",
+      "text": "有一小孩常患腎盂腎炎(pyelonephritis)，若懷疑是否有膀胱輸尿管逆流時，應施行何種檢查？",
+      "options": {
+        "A": "intravenous urography",
+        "B": "retrograde urography",
+        "C": "antegrade urography",
+        "D": "voiding cystourethrography"
+      },
+      "page": 2,
+      "answer": "D"
+    },
+    {
+      "id": "101-2-22",
+      "text": "施行靜脈注射泌尿道攝影(IVU)時，疑似左側腎盂(left renal pelvis)病灶，宜採用何種姿勢攝影？",
+      "options": {
+        "A": "LPO",
+        "B": "RPO",
+        "C": "AP，X光管向腳5～10度",
+        "D": "standing"
+      },
+      "page": 2,
+      "answer": "B"
+    },
+    {
+      "id": "101-2-23",
+      "text": "介入性放射線診療TIPS主要是欲聯結下列何二者間之血流？",
+      "options": {
+        "A": "門靜脈，主動脈",
+        "B": "門靜脈，肝靜脈",
+        "C": "肝動脈，肝靜脈",
+        "D": "肝動脈，門靜脈"
+      },
+      "page": 2,
+      "answer": "B"
+    },
+    {
+      "id": "101-2-24",
+      "text": "有關子宮輸卵管攝影的敘述，下列何者錯誤？",
+      "options": {
+        "A": "適宜偵測所有子宮肌瘤",
+        "B": "輸卵管連繫卵巢和子宮",
+        "C": "應在月經開始後7至10天間做檢查",
+        "D": "主要是用於評估婦女不孕症的原因"
+      },
+      "page": 3,
+      "answer": "A"
+    },
+    {
+      "id": "101-2-25",
+      "text": "下列何種不適宜開刀之腫瘤，最常使用chemoembolization？",
+      "options": {
+        "A": "胃癌",
+        "B": "卵巢癌",
+        "C": "胰臟癌",
+        "D": "肝癌"
+      },
+      "page": 3,
+      "answer": "D"
+    },
+    {
+      "id": "101-2-78",
+      "text": "承上題，這個病人下一步該做何種檢查才能正確診斷及適當治療？",
+      "options": {
+        "A": "數位贅減血管攝影(digital subtraction angiography，DSA)",
+        "B": "CT-血管攝影(CT-angiography，CTA)",
+        "C": "MR-血管攝影(MR-angiography，MRA)",
+        "D": "不須再做其他檢查，即可做治療"
+      },
+      "page": 12,
+      "answer": "A"
+    },
+    {
+      "id": "101-1-15",
+      "text": "下列何種栓塞物質最不適用於栓塞骨盆受傷之血管？",
+      "options": {
+        "A": "gelfoam",
+        "B": "lipiodol",
+        "C": "coils",
+        "D": "detachable balloons"
+      },
+      "page": 2,
+      "answer": "C"
+    },
+    {
+      "id": "101-1-16",
+      "text": "進行肝癌血管栓塞時，導管不需經過下列那條血管？",
+      "options": {
+        "A": "主動脈",
+        "B": "下腔靜脈",
+        "C": "腹腔動脈",
+        "D": "肝動脈"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "101-1-17",
+      "text": "下列何種檢查屬於下泌尿道之功能性檢查？",
+      "options": {
+        "A": "逆行性尿路攝影(retrograde urography or pyelography)",
+        "B": "逆行性膀胱攝影(retrograde cystography)",
+        "C": "逆行性尿道攝影(retrograde urethrography)",
+        "D": "排尿膀胱尿道攝影(voiding cystourethrography)"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "101-1-18",
+      "text": "下列關於幼兒靜脈尿路攝影(intravenous urography)的敘述，何者錯誤？",
+      "options": {
+        "A": "檢查前需禁食固體食物4小時",
+        "B": "檢查前一日應給予瀉劑",
+        "C": "應儘量給予非離子對比劑",
+        "D": "檢查前應鼓勵喝足夠的水避免脫水"
+      },
+      "page": 2,
+      "answer": "A"
+    },
+    {
+      "id": "101-1-19",
+      "text": "病人施行靜脈尿路攝影(intravenous urography)時，所採用之對比劑及施打路徑為下列何者？",
+      "options": {
+        "A": "靜脈注射含碘對比劑",
+        "B": "動脈注射含碘對比劑",
+        "C": "靜脈注射含釓對比劑",
+        "D": "動脈注射含釓對比劑"
+      },
+      "page": 3,
+      "answer": "C"
+    },
+    {
+      "id": "101-1-21",
+      "text": "下列何者為施行血管攝影之最佳醫療人員組合？",
+      "options": {
+        "A": "radiologist",
+        "B": "radiologist, radiographer",
+        "C": "radiographer, nurse",
+        "D": "radiologist, radiographer, nurse"
+      },
+      "page": 3,
+      "answer": "D"
+    },
+    {
+      "id": "101-1-23",
+      "text": "下列有關血管攝影術之敘述，何者錯誤？",
+      "options": {
+        "A": "穿刺位置可能持續性出血不止",
+        "B": "可能造成血管壁剝離",
+        "C": "可能穿刺位置感染",
+        "D": "因有用肝素，故不會造成血栓"
+      },
+      "page": 3,
+      "answer": "B"
+    },
+    {
+      "id": "101-1-24",
+      "text": "施行myelography一般穿刺處為：",
+      "options": {
+        "A": "T12～L1",
+        "B": "L3～L4",
+        "C": "T1～T2",
+        "D": "T11～T12"
+      },
+      "page": 3,
+      "answer": "A"
+    },
+    {
+      "id": "101-1-25",
+      "text": "Panorex係屬於下列何種攝影？",
+      "options": {
+        "A": "computed tomography",
+        "B": "conventional tomography",
+        "C": "breast tomosynthesis",
+        "D": "contrast radiography"
+      },
+      "page": 3,
+      "answer": "D"
+    },
+    {
+      "id": "101-1-26",
+      "text": "靜脈注射泌尿攝影(IVU)時，如欲施行nephrotomography，一般其最佳時間為注射後幾分鐘？",
+      "options": {
+        "A": "1",
+        "B": "5",
+        "C": "15",
+        "D": "20"
+      },
+      "page": 3,
+      "answer": "A"
+    },
+    {
+      "id": "101-1-28",
+      "text": "下列那一種情況為施行HSG檢查最適合之適應症？",
+      "options": {
+        "A": "女性不孕症",
+        "B": "男性不孕症",
+        "C": "疑子宮內病變",
+        "D": "輸卵管術後檢查"
+      },
+      "page": 3,
+      "answer": "C"
+    },
+    {
+      "id": "101-1-29",
+      "text": "下列何者之檢查中最無法施行介入性診療(如：取出結石)？",
+      "options": {
+        "A": "endoscopic retrograde cholangiopancreatography(ERCP)",
+        "B": "percutaneous transhepatic cholangiography and drainage(PTCD)",
+        "C": "magnetic resonance cholangiopancreatography(MRCP)",
+        "D": "T-tube cholangiography"
+      },
+      "page": 3,
+      "answer": "D"
+    },
+    {
+      "id": "101-1-31",
+      "text": "在作肝癌(HCC)病人之血管栓塞術時，下列何者為其禁忌？",
+      "options": {
+        "A": "肝癌腫瘤破裂(HCC rupture)",
+        "B": "多顆肝癌腫瘤(multiple HCCs)",
+        "C": "門靜脈主幹栓塞(main portal vein thrombosis)",
+        "D": "病人貧血"
+      },
+      "page": 4,
+      "answer": "C"
+    },
+    {
+      "id": "101-1-45",
+      "text": "下圖中箭號所指的構造為何？",
+      "options": {
+        "A": "anterior cerebral artery(ACA)",
+        "B": "middle cerebral artery(MCA)",
+        "C": "posterior cerebral artery(PCA)",
+        "D": "vertebral artery(VA)"
+      },
+      "page": 5,
+      "answer": "C",
+      "image": "特殊攝影期末101-115/images/q101-1-45_p5_i1.png"
+    },
+    {
+      "id": "101-1-76",
+      "text": "病人急性腹痛前來求診，理學與電腦斷層檢查懷疑腸道缺血(bowel ischemia)，遂執行血管攝 影檢查，請依所附之下圖回答下列三題： 1.圖中影像中央顯示為那一條血管？",
+      "options": {
+        "A": "肝動脈",
+        "B": "脾動脈",
+        "C": "胃十二指腸動脈",
+        "D": "上腸系(繫)膜動脈"
+      },
+      "page": 10,
+      "answer": "C",
+      "image": "特殊攝影期末101-115/images/q101-1-76_p10_i1.png"
+    },
+    {
+      "id": "101-1-77",
+      "text": "正常情況下該血管之血管攝影在靜脈相(venous phase)可呈現那條血管之顯影？",
+      "options": {
+        "A": "脾靜脈(splenic vein)",
+        "B": "下腸繫膜動脈(inferior mesenteric vein)",
+        "C": "門脈靜脈(portal vein)",
+        "D": "下腔大靜脈(inferior vena cava)"
+      },
+      "page": 10,
+      "answer": "B"
+    },
+    {
+      "id": "101-1-78",
+      "text": "該血管之末端沒有顯影，最可能原因為何？",
+      "options": {
+        "A": "正常變異",
+        "B": "急性血栓",
+        "C": "血管撕裂",
+        "D": "對比劑外漏"
+      },
+      "page": 11,
+      "answer": "A"
     }
   ]
 }
