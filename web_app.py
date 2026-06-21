@@ -11,40 +11,21 @@ st.set_page_config(page_title="📱 國考刷題", layout="centered", initial_si
 # ==========================================
 st.markdown("""
     <style>
-    /* 隱藏預設的頂部選單、底部浮水印、頂部工具列，把整個畫面讓給內容本身 */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden; height: 0;}
-    [data-testid="stToolbar"] {visibility: hidden; height: 0;}
-
-    /* 關閉下拉刷新的彈跳效果，更有原生 App 的觸感 */
-    /* 關閉左右滑動觸發瀏覽器上一頁的干擾，但保留垂直下拉刷新的功能 */
-    html, body {
-        overscroll-behavior-x: none;
-        overscroll-behavior-y: auto;
-    }
-
-    /* 讓整個網頁的最下方多留一點空白，避免題目內容被底部按鈕蓋住 */
-    .block-container {
-        padding-top: 1.2rem;
-        padding-bottom: 112px;
-        max-width: 600px;
-    }
-
     /* 題目卡片：圓角、陰影，加入進場與滑動動畫 */
     .st-key-question_card {
         border-radius: 16px !important;
         padding: 18px !important;
         box-shadow: 0px 2px 10px rgba(0,0,0,0.06);
         animation: fadeIn 0.25s ease-out forwards;
-        transition: transform 0.15s ease-in, opacity 0.15s ease-in;
+        /* 【修復圖片放大】：移除會困住全螢幕元件的 transform 屬性 */
     }
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
+        to { opacity: 1; transform: none; } 
     }
     .st-key-question_card img {
         border-radius: 12px;
+        cursor: zoom-in; /* 提示使用者可以點擊放大 */
     }
 
     /* 跳題用的摺疊區塊，稍微收斂一點視覺權重 */
@@ -63,8 +44,7 @@ st.markdown("""
         min-height: 44px;
     }
 
-    /* 將放置主要操作按鈕的容器，固定在螢幕正下方(用 container(key=) 精準鎖定，
-       不會誤鎖到頁面上其他的 columns 排版) */
+    /* 底部固定按鈕區 */
     .st-key-bottom_nav {
         position: fixed;
         left: 0;
@@ -77,21 +57,36 @@ st.markdown("""
         box-shadow: 0px -4px 12px rgba(0,0,0,0.05);
     }
     .st-key-bottom_nav button {
-            height: 52px !important;
-            font-size: 18px !important;
-            font-weight: 600 !important;
-            border-radius: 12px !important;
-        }
+        height: 52px !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        border-radius: 12px !important;
+    }
 
-        /* 隱藏換題按鈕(交給手勢滑動觸發) */
-        /* 隱藏換題按鈕：改用透明隱藏，確保 JS 絕對能觸發點擊 */
-        .st-key-hidden_buttons {
-            position: absolute !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-            height: 0 !important;
-            overflow: hidden !important;
-        }
+    /* 【新增】：懸浮側邊換題按鈕 (透明、不擋視線) */
+    .st-key-btn_prev, .st-key-btn_next {
+        position: fixed !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 990 !important;
+        width: 32px !important;
+        height: 80px !important;
+        opacity: 0.3;
+        transition: opacity 0.2s;
+    }
+    .st-key-btn_prev:active, .st-key-btn_next:active { opacity: 0.8; }
+    .st-key-btn_prev { left: 0 !important; }
+    .st-key-btn_next { right: 0 !important; }
+    .st-key-btn_prev button, .st-key-btn_next button {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 0 !important;
+        border-radius: 6px !important;
+        background: rgba(0,0,0,0.15) !important;
+        border: none !important;
+        font-size: 18px !important;
+        color: #000 !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -224,19 +219,19 @@ with st.container(border=True, key="question_card"):
 st.write("")  # 跟底部固定按鈕保留一點呼吸空間，避免緊貼
 
 # ==========================================
-# 隱藏的換題按鈕 (給 JS 滑動觸發用)
+# 懸浮側邊換題按鈕 (左右兩側的 < >)
 # ==========================================
-with st.container(key="hidden_buttons"):
-    if st.button("PrevQuestionHidden"):
-        if idx > 0:
-            st.session_state.q_idx -= 1
-            st.session_state.show_ans = False
-            st.rerun()
-    if st.button("NextQuestionHidden"):
-        if idx < total - 1:
-            st.session_state.q_idx += 1
-            st.session_state.show_ans = False
-            st.rerun()
+if idx > 0:
+    if st.button("❮", key="btn_prev"):
+        st.session_state.q_idx -= 1
+        st.session_state.show_ans = False
+        st.rerun()
+
+if idx < total - 1:
+    if st.button("❯", key="btn_next"):
+        st.session_state.q_idx += 1
+        st.session_state.show_ans = False
+        st.rerun()
 
 # ==========================================
 # 注入滑動監聽 JS (左右滑動換題)
@@ -264,28 +259,27 @@ function handleSwipe() {
     let diffX = touchstartX - touchendX;
     let diffY = Math.abs(touchstartY - touchendY);
 
-    // 【防誤觸】：如果垂直滑動距離大於水平滑動，或垂直移動超過 40px，視為使用者想上下捲動或下拉重整，不觸發換題
+    // 防誤觸：垂直移動超過 40px，視為使用者想上下捲動，不觸發換題
     if (diffY > Math.abs(diffX) || diffY > 40) return;
 
     let card = doc.querySelector('.st-key-question_card');
-    let btns = Array.from(doc.querySelectorAll('button'));
 
     // 向左滑動 (下一題)
     if (diffX > 50) {
-        let nextBtn = btns.find(b => b.innerText === 'NextQuestionHidden');
-        if (nextBtn && !nextBtn.disabled) {
-            // 加入滑出特效
-            if(card) { card.style.transform = 'translateX(-30vw)'; card.style.opacity = '0'; }
-            setTimeout(() => nextBtn.click(), 120);
+        // 直接精準抓取我們剛新增的右側實體按鈕
+        let nextBtn = doc.querySelector('.st-key-btn_next button');
+        if (nextBtn) {
+            if(card) { card.style.opacity = '0'; }
+            setTimeout(() => nextBtn.click(), 50);
         }
     }
     // 向右滑動 (上一題)
     if (diffX < -50) {
-        let prevBtn = btns.find(b => b.innerText === 'PrevQuestionHidden');
-        if (prevBtn && !prevBtn.disabled) {
-            // 加入滑出特效
-            if(card) { card.style.transform = 'translateX(30vw)'; card.style.opacity = '0'; }
-            setTimeout(() => prevBtn.click(), 120);
+        // 直接精準抓取我們剛新增的左側實體按鈕
+        let prevBtn = doc.querySelector('.st-key-btn_prev button');
+        if (prevBtn) {
+            if(card) { card.style.opacity = '0'; }
+            setTimeout(() => prevBtn.click(), 50);
         }
     }
 }
