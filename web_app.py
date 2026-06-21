@@ -84,8 +84,13 @@ st.markdown("""
         }
 
         /* 隱藏換題按鈕(交給手勢滑動觸發) */
+        /* 隱藏換題按鈕：改用透明隱藏，確保 JS 絕對能觸發點擊 */
         .st-key-hidden_buttons {
-            display: none !important;
+            position: absolute !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            height: 0 !important;
+            overflow: hidden !important;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -105,10 +110,24 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # 讀取電腦端處理好的 JSON 題庫
+# 讀取電腦端處理好的 JSON 題庫 (改為掃描所有子資料夾)
 @st.cache_data
 def load_data():
-    with open("local_data/questions.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+    combined_data = {"decks": {}}
+    base_dir = "local_data"
+    
+    if os.path.exists(base_dir):
+        for item in os.listdir(base_dir):
+            sub_dir = os.path.join(base_dir, item)
+            if os.path.isdir(sub_dir):
+                q_json = os.path.join(sub_dir, "questions.json")
+                if os.path.exists(q_json):
+                    with open(q_json, "r", encoding="utf-8") as f:
+                        deck_info = json.load(f)
+                        deck_name = deck_info.get("metadata", {}).get("deck_name", item)
+                        combined_data["decks"][deck_name] = deck_info
+                        
+    return combined_data
 
 data = load_data()
 decks = list(data.get("decks", {}).keys())
@@ -145,7 +164,6 @@ idx = st.session_state.q_idx
 st.query_params["deck"] = selected_deck
 st.query_params["q"] = str(idx)
 
-idx = st.session_state.q_idx
 total = len(questions)
 q = questions[idx]
 
@@ -155,7 +173,7 @@ st.progress((idx + 1) / total, text=f"進度：第 {idx + 1} / {total} 題")
 
 with st.expander("⚙️ 顯示設定與跳題"):
     # 字體調整拉桿
-    st.session_state.font_size = st.slider("調整字體大小", min_value=14, max_value=36, value=st.session_state.font_size, step=1)
+    st.slider("調整字體大小", min_value=14, max_value=36, step=1, key="font_size")
     
     st.write("跳至指定題號：")
     jc1, jc2 = st.columns([3, 1])
