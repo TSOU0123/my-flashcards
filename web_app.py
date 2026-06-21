@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import json
 import os
 
@@ -249,15 +250,16 @@ if idx < total - 1:
         st.session_state.show_ans = False
         st.rerun()
 
+
 # ==========================================
 # 注入滑動監聽 JS (左右滑動換題)
 # ==========================================
-st.html("""
+components.html("""
 <script>
-// 【修復】：使用 IIFE (立即執行函式) 包裝，避免 Streamlit 重新渲染時發生變數重複宣告的崩潰錯誤
 (function() {
-    const doc = document;
+    const doc = window.parent.document;
 
+    // 【1. 鎖死手機縮放】
     let metaViewport = doc.querySelector('meta[name="viewport"]');
     if (metaViewport) {
         metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
@@ -268,53 +270,55 @@ st.html("""
         doc.head.appendChild(meta);
     }
 
-    // 如果已經綁定過滑動事件，就直接跳出，避免重複綁定
-    if (window.swipeListenerAdded) return;
+    // 【2. 防重複綁定】
+    if (window.parent.mySwipeAttached) return;
+    window.parent.mySwipeAttached = true;
 
-    let touchstartX = 0;
-    let touchstartY = 0;
-    let touchendX = 0;
-    let touchendY = 0;
+    let tsX = 0, tsY = 0;
 
     doc.addEventListener('touchstart', e => {
-        touchstartX = e.changedTouches[0].screenX;
-        touchstartY = e.changedTouches[0].screenY;
+        tsX = e.changedTouches[0].screenX;
+        tsY = e.changedTouches[0].screenY;
     }, {passive: true});
 
     doc.addEventListener('touchend', e => {
-        touchendX = e.changedTouches[0].screenX;
-        touchendY = e.changedTouches[0].screenY;
-        handleSwipe();
-    }, {passive: true});
+        let teX = e.changedTouches[0].screenX;
+        let teY = e.changedTouches[0].screenY;
+        let dX = tsX - teX;
+        let dY = Math.abs(tsY - teY);
 
-    function handleSwipe() {
-        let diffX = touchstartX - touchendX;
-        let diffY = Math.abs(touchstartY - touchendY);
-
-        if (diffY > Math.abs(diffX) || diffY > 40) return;
+        if (dY > Math.abs(dX) || dY > 60) return;
 
         let card = doc.querySelector('.st-key-question_card');
+        let btns = Array.from(doc.querySelectorAll('button'));
+        let nextBtn = btns.find(b => b.innerText.includes('❯'));
+        let prevBtn = btns.find(b => b.innerText.includes('❮'));
 
-        if (diffX > 50) {
-            let nextBtn = doc.querySelector('.st-key-btn_next button');
-            if (nextBtn) {
-                if(card) { card.style.opacity = '0'; }
-                setTimeout(() => nextBtn.click(), 50);
+        // 【防白畫面機制】：加入過渡動畫，並在 400 毫秒後強制清除 inline style，避免新題目維持隱形！
+        function triggerSwipe(btn) {
+            if(card) { 
+                card.style.transition = 'opacity 0.2s, transform 0.2s';
+                card.style.opacity = '0'; 
+                card.style.transform = 'scale(0.95)';
+                
+                setTimeout(() => { 
+                    card.style.opacity = ''; 
+                    card.style.transform = ''; 
+                    card.style.transition = '';
+                }, 400); 
             }
+            setTimeout(() => btn.click(), 50);
         }
-        if (diffX < -50) {
-            let prevBtn = doc.querySelector('.st-key-btn_prev button');
-            if (prevBtn) {
-                if(card) { card.style.opacity = '0'; }
-                setTimeout(() => prevBtn.click(), 50);
-            }
-        }
-    }
 
-    window.swipeListenerAdded = true;
+        if (dX > 40 && nextBtn) { // 向左滑 (下一題)
+            triggerSwipe(nextBtn);
+        } else if (dX < -40 && prevBtn) { // 向右滑 (上一題)
+            triggerSwipe(prevBtn);
+        }
+    }, {passive: true});
 })();
 </script>
-""")
+""", height=0, width=0)
 
 # ==========================================
 # 底部固定按鈕區 (只保留大顆解答按鈕)
